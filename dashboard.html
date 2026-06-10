@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TradingBot — Panel</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --borde: #21262d;
+    --texto: #e6edf3; --gris: #8b949e;
+    --verde: #3fb950; --rojo: #f85149; --acento: #58a6ff; --ambar: #d29922;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--texto);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    padding: 24px; max-width: 1100px; margin: 0 auto;
+  }
+  header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+  h1 { font-size: 22px; }
+  h1 span { color: var(--acento); }
+  #actualizado { color: var(--gris); font-size: 13px; }
+  .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .tarjeta { background: var(--panel); border: 1px solid var(--borde); border-radius: 10px; padding: 16px; }
+  .tarjeta .titulo { color: var(--gris); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+  .tarjeta .valor { font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .pos { color: var(--verde); } .neg { color: var(--rojo); }
+  section { background: var(--panel); border: 1px solid var(--borde); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  section h2 { font-size: 14px; color: var(--gris); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; color: var(--gris); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--borde); }
+  td { padding: 7px 8px; border-bottom: 1px solid var(--borde); font-variant-numeric: tabular-nums; }
+  tr:last-child td { border-bottom: none; }
+  .dir-long { color: var(--verde); font-weight: 600; }
+  .dir-short { color: var(--rojo); font-weight: 600; }
+  .vacio { color: var(--gris); font-style: italic; padding: 8px; }
+  #grafico { width: 100%; height: 180px; }
+  #eventos { list-style: none; font-size: 13px; max-height: 260px; overflow-y: auto; }
+  #eventos li { padding: 5px 0; border-bottom: 1px solid var(--borde); color: var(--gris); }
+  #eventos li b { color: var(--texto); font-weight: 500; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🤖 Trading<span>Bot</span> — paper trading</h1>
+  <div id="actualizado">cargando…</div>
+</header>
+
+<div class="tarjetas">
+  <div class="tarjeta"><div class="titulo">Equity</div><div class="valor" id="equity">—</div></div>
+  <div class="tarjeta"><div class="titulo">Rendimiento</div><div class="valor" id="rendimiento">—</div></div>
+  <div class="tarjeta"><div class="titulo">Posiciones abiertas</div><div class="valor" id="num-pos">—</div></div>
+  <div class="tarjeta"><div class="titulo">Trades cerrados</div><div class="valor" id="num-trades">—</div></div>
+</div>
+
+<section>
+  <h2>Curva de equity</h2>
+  <svg id="grafico" viewBox="0 0 1000 180" preserveAspectRatio="none"></svg>
+</section>
+
+<section>
+  <h2>Posiciones abiertas</h2>
+  <table>
+    <thead><tr><th>Instrumento</th><th>Dirección</th><th>Entrada</th><th>Actual</th><th>Stop</th><th>Take profit</th><th>PnL flotante</th></tr></thead>
+    <tbody id="posiciones"></tbody>
+  </table>
+  <div class="vacio" id="sin-posiciones" hidden>Sin posiciones abiertas — el bot espera señales.</div>
+</section>
+
+<section>
+  <h2>Últimos trades cerrados</h2>
+  <table>
+    <thead><tr><th>Cerrada</th><th>Instrumento</th><th>Dirección</th><th>Entrada</th><th>Salida</th><th>PnL USD</th><th>Motivo</th></tr></thead>
+    <tbody id="trades"></tbody>
+  </table>
+  <div class="vacio" id="sin-trades" hidden>Todavía no se cerró ningún trade.</div>
+</section>
+
+<section>
+  <h2>Actividad del bot</h2>
+  <ul id="eventos"></ul>
+</section>
+
+<script>
+const CAPITAL_INICIAL = 10000;
+const fmt = n => n.toLocaleString("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+async function refrescar() {
+  const [estado, trades] = await Promise.all([
+    fetch("/api/estado").then(r => r.json()),
+    fetch("/api/trades").then(r => r.json()),
+  ]);
+
+  const precios = estado.precios || {};
+  let flotante = 0;
+  for (const p of estado.posiciones) {
+    const precio = precios[p.simbolo];
+    if (precio) flotante += (p.direccion === "long" ? 1 : -1) * (precio - p.entrada) * p.unidades;
+  }
+  const equity = estado.capital + flotante;
+  const rend = (equity / CAPITAL_INICIAL - 1) * 100;
+
+  document.getElementById("equity").textContent = fmt(equity) + " USD";
+  const elRend = document.getElementById("rendimiento");
+  elRend.textContent = (rend >= 0 ? "+" : "") + rend.toFixed(2) + "%";
+  elRend.className = "valor " + (rend >= 0 ? "pos" : "neg");
+  document.getElementById("num-pos").textContent = estado.posiciones.length;
+  document.getElementById("num-trades").textContent = trades.length;
+  document.getElementById("actualizado").textContent =
+    estado.actualizado ? "Último escaneo: " + estado.actualizado + " UTC" : "El bot todavía no corrió — ejecutá: python main.py scan";
+
+  // posiciones
+  const tbody = document.getElementById("posiciones");
+  tbody.innerHTML = "";
+  for (const p of estado.posiciones) {
+    const precio = precios[p.simbolo];
+    const pnl = precio ? (p.direccion === "long" ? 1 : -1) * (precio - p.entrada) * p.unidades : null;
+    tbody.insertAdjacentHTML("beforeend", `<tr>
+      <td>${p.nombre}</td>
+      <td class="dir-${p.direccion}">${p.direccion.toUpperCase()}</td>
+      <td>${fmt(p.entrada)}</td>
+      <td>${precio ? fmt(precio) : "—"}</td>
+      <td>${fmt(p.stop)}</td>
+      <td>${fmt(p.take_profit)}</td>
+      <td class="${pnl >= 0 ? "pos" : "neg"}">${pnl === null ? "—" : (pnl >= 0 ? "+" : "") + fmt(pnl)}</td>
+    </tr>`);
+  }
+  document.getElementById("sin-posiciones").hidden = estado.posiciones.length > 0;
+
+  // trades
+  const tb = document.getElementById("trades");
+  tb.innerHTML = "";
+  for (const t of trades.slice(-15).reverse()) {
+    const pnl = parseFloat(t.pnl_usd);
+    tb.insertAdjacentHTML("beforeend", `<tr>
+      <td>${t.cerrada}</td><td>${t.nombre}</td>
+      <td class="dir-${t.direccion}">${t.direccion.toUpperCase()}</td>
+      <td>${t.entrada}</td><td>${t.salida}</td>
+      <td class="${pnl >= 0 ? "pos" : "neg"}">${(pnl >= 0 ? "+" : "") + fmt(pnl)}</td>
+      <td>${t.motivo_cierre}</td>
+    </tr>`);
+  }
+  document.getElementById("sin-trades").hidden = trades.length > 0;
+
+  // eventos
+  const ul = document.getElementById("eventos");
+  ul.innerHTML = "";
+  for (const e of (estado.eventos || []).slice(-30).reverse()) {
+    ul.insertAdjacentHTML("beforeend", `<li>${e.fecha} — <b>${e.texto}</b></li>`);
+  }
+
+  dibujarCurva(estado.historial_equity || []);
+}
+
+function dibujarCurva(historial) {
+  const svg = document.getElementById("grafico");
+  svg.innerHTML = "";
+  if (historial.length < 2) {
+    svg.innerHTML = '<text x="500" y="95" fill="#8b949e" font-size="14" text-anchor="middle">Se va a dibujar cuando haya más escaneos</text>';
+    return;
+  }
+  const vals = historial.map(h => h.equity);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const rango = (max - min) || 1;
+  const pts = vals.map((v, i) => {
+    const x = (i / (vals.length - 1)) * 1000;
+    const y = 170 - ((v - min) / rango) * 160;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  });
+  const color = vals[vals.length - 1] >= vals[0] ? "#3fb950" : "#f85149";
+  svg.innerHTML =
+    `<polyline points="${pts.join(" ")}" fill="none" stroke="${color}" stroke-width="2"/>` +
+    `<polygon points="0,170 ${pts.join(" ")} 1000,170" fill="${color}" opacity="0.08"/>`;
+}
+
+refrescar();
+setInterval(refrescar, 30_000);
+</script>
+</body>
+</html>
