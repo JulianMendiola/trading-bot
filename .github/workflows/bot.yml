@@ -1,3 +1,4 @@
+# Bot de paper trading: escanea mercados cada 15 min y guarda el estado en el repo
 name: TradingBot
 
 on:
