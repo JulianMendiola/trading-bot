@@ -46,6 +46,10 @@ El workflow [.github/workflows/bot.yml](.github/workflows/bot.yml) ejecuta `pyth
 
 ## Dashboard
 
+**Público (desde cualquier lado):** https://julianmendiola.github.io/trading-bot/ — instalable como app desde el celular ("Agregar a pantalla de inicio").
+
+**Local:**
+
 ```
 python dashboard.py
 ```
