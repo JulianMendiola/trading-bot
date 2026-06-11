@@ -1,0 +1,54 @@
+{
+  "capital": 10000.0,
+  "posiciones": [
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "long",
+      "entrada": 62581.51171875,
+      "unidades": 0.09012088639087609,
+      "stop": 61471.89103030852,
+      "take_profit": 64800.75309563295,
+      "riesgo_usd": 100.0,
+      "motivo": "Ruptura del máximo de 20 velas",
+      "abierta": "2026-06-10 16:54:47"
+    }
+  ],
+  "historial_equity": [
+    {
+      "fecha": "2026-06-10 16:54:48",
+      "equity": 9960.14
+    },
+    {
+      "fecha": "2026-06-10 17:01:30",
+      "equity": 9965.26
+    },
+    {
+      "fecha": "2026-06-10 17:04:29",
+      "equity": 9974.02
+    },
+    {
+      "fecha": "2026-06-11 14:23:06",
+      "equity": 10023.17
+    },
+    {
+      "fecha": "2026-06-11 14:23:37",
+      "equity": 10025.64
+    }
+  ],
+  "eventos": [
+    {
+      "fecha": "2026-06-10 16:54:47",
+      "texto": "ABIERTA LONG Bitcoin @ 62581.51 (stop 61471.89, TP 64800.75) — Ruptura del máximo de 20 velas"
+    }
+  ],
+  "precios": {
+    "ES=F": 7304.25,
+    "NQ=F": 28882.5,
+    "BTC-USD": 62866.0,
+    "GC=F": 4076.300048828125,
+    "CL=F": 89.94000244140625
+  },
+  "actualizado": "2026-06-11 14:23:37"
+}

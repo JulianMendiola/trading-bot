@@ -7,11 +7,31 @@ que escribe el bot. No necesita dependencias extra.
 import csv
 import json
 import os
+import subprocess
+import threading
+import time
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 import config
 
 PUERTO = int(os.environ.get("PORT", 8800))
+CARPETA = os.path.dirname(os.path.abspath(__file__))
+
+
+def sincronizar_con_github():
+    """El bot corre en GitHub Actions y commitea su estado al repo;
+    acá hacemos git pull cada 3 minutos para que el dashboard lo refleje."""
+    while True:
+        try:
+            r = subprocess.run(
+                ["git", "pull", "--ff-only"],
+                cwd=CARPETA, capture_output=True, text=True, timeout=60,
+            )
+            if r.returncode == 0 and "Already up to date" not in r.stdout:
+                print(f"  Estado sincronizado desde GitHub")
+        except Exception:
+            pass
+        time.sleep(180)
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -54,6 +74,7 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    print(f"Dashboard en http://localhost:{PUERTO}")
+    os.chdir(CARPETA)
+    threading.Thread(target=sincronizar_con_github, daemon=True).start()
+    print(f"Dashboard en http://localhost:{PUERTO} (sincroniza con GitHub cada 3 min)")
     HTTPServer(("127.0.0.1", PUERTO), Handler).serve_forever()

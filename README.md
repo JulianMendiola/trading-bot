@@ -38,13 +38,19 @@ python main.py backtest  # prueba las estrategias sobre el histórico
 python main.py reset     # reinicia la cuenta simulada a 10.000 USD
 ```
 
+## Modo 24/7 (GitHub Actions)
+
+El workflow [.github/workflows/bot.yml](.github/workflows/bot.yml) ejecuta `python main.py scan` cada 15 minutos en GitHub Actions y commitea el estado (`data/`) al repo. El bot corre aunque tu compu esté apagada. También se puede disparar a mano desde la pestaña **Actions** del repo.
+
+> Si corrés el bot local (`live`), pausá el workflow antes para no pisar el estado.
+
 ## Dashboard
 
 ```
 python dashboard.py
 ```
 
-Abrí http://localhost:8800 — equity, posiciones abiertas, historial de trades y actividad del bot, con refresco automático cada 30 s.
+Abrí http://localhost:8800 — equity, posiciones abiertas, historial de trades y actividad del bot, con refresco automático cada 30 s. Hace `git pull` cada 3 minutos para traer lo que el bot hizo en la nube. `iniciar_bot.bat` abre todo con doble click.
 
 ## Configuración
 
