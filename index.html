@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TradingBot — Panel</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#0d1117">
+<meta name="mobile-web-app-capable" content="yes">
 <style>
   :root {
     --bg: #0d1117; --panel: #161b22; --borde: #21262d;
@@ -14,20 +19,21 @@
   body {
     background: var(--bg); color: var(--texto);
     font-family: "Segoe UI", system-ui, sans-serif;
-    padding: 24px; max-width: 1100px; margin: 0 auto;
+    padding: 16px; max-width: 1100px; margin: 0 auto;
   }
   header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
   h1 { font-size: 22px; }
   h1 span { color: var(--acento); }
   #actualizado { color: var(--gris); font-size: 13px; }
-  .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+  .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
   .tarjeta { background: var(--panel); border: 1px solid var(--borde); border-radius: 10px; padding: 16px; }
   .tarjeta .titulo { color: var(--gris); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
-  .tarjeta .valor { font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tarjeta .valor { font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
   .pos { color: var(--verde); } .neg { color: var(--rojo); }
   section { background: var(--panel); border: 1px solid var(--borde); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
   section h2 { font-size: 14px; color: var(--gris); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; white-space: nowrap; }
   th { text-align: left; color: var(--gris); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--borde); }
   td { padding: 7px 8px; border-bottom: 1px solid var(--borde); font-variant-numeric: tabular-nums; }
   tr:last-child td { border-bottom: none; }
@@ -60,19 +66,23 @@
 
 <section>
   <h2>Posiciones abiertas</h2>
+  <div class="scroll">
   <table>
     <thead><tr><th>Instrumento</th><th>Dirección</th><th>Entrada</th><th>Actual</th><th>Stop</th><th>Take profit</th><th>PnL flotante</th></tr></thead>
     <tbody id="posiciones"></tbody>
   </table>
+  </div>
   <div class="vacio" id="sin-posiciones" hidden>Sin posiciones abiertas — el bot espera señales.</div>
 </section>
 
 <section>
   <h2>Últimos trades cerrados</h2>
+  <div class="scroll">
   <table>
     <thead><tr><th>Cerrada</th><th>Instrumento</th><th>Dirección</th><th>Entrada</th><th>Salida</th><th>PnL USD</th><th>Motivo</th></tr></thead>
     <tbody id="trades"></tbody>
   </table>
+  </div>
   <div class="vacio" id="sin-trades" hidden>Todavía no se cerró ningún trade.</div>
 </section>
 
@@ -85,11 +95,43 @@
 const CAPITAL_INICIAL = 10000;
 const fmt = n => n.toLocaleString("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
+function parsearCSV(texto) {
+  const lineas = texto.trim().split(/\r?\n/).filter(l => l);
+  if (lineas.length < 2) return [];
+  const cols = lineas[0].split(",");
+  return lineas.slice(1).map(l => {
+    const v = l.split(",");
+    return Object.fromEntries(cols.map((c, i) => [c, v[i]]));
+  });
+}
+
+async function cargarDatos() {
+  // Local: dashboard.py expone /api. En GitHub Pages: archivos estáticos del repo.
+  try {
+    const [e, t] = await Promise.all([fetch("api/estado"), fetch("api/trades")]);
+    if (e.ok) return [await e.json(), await t.json()];
+  } catch {}
+  const cb = "?v=" + Date.now();
+  const estado = await fetch("data/estado.json" + cb).then(r => {
+    if (!r.ok) throw new Error("sin estado");
+    return r.json();
+  });
+  let trades = [];
+  try {
+    const r = await fetch("data/trades.csv" + cb);
+    if (r.ok) trades = parsearCSV(await r.text());
+  } catch {}
+  return [estado, trades];
+}
+
 async function refrescar() {
-  const [estado, trades] = await Promise.all([
-    fetch("/api/estado").then(r => r.json()),
-    fetch("/api/trades").then(r => r.json()),
-  ]);
+  let estado, trades;
+  try {
+    [estado, trades] = await cargarDatos();
+  } catch {
+    document.getElementById("actualizado").textContent = "No se pudo cargar el estado del bot";
+    return;
+  }
 
   const precios = estado.precios || {};
   let flotante = 0;
@@ -107,9 +149,8 @@ async function refrescar() {
   document.getElementById("num-pos").textContent = estado.posiciones.length;
   document.getElementById("num-trades").textContent = trades.length;
   document.getElementById("actualizado").textContent =
-    estado.actualizado ? "Último escaneo: " + estado.actualizado + " UTC" : "El bot todavía no corrió — ejecutá: python main.py scan";
+    estado.actualizado ? "Último escaneo: " + estado.actualizado + " UTC" : "El bot todavía no corrió";
 
-  // posiciones
   const tbody = document.getElementById("posiciones");
   tbody.innerHTML = "";
   for (const p of estado.posiciones) {
@@ -127,7 +168,6 @@ async function refrescar() {
   }
   document.getElementById("sin-posiciones").hidden = estado.posiciones.length > 0;
 
-  // trades
   const tb = document.getElementById("trades");
   tb.innerHTML = "";
   for (const t of trades.slice(-15).reverse()) {
@@ -142,7 +182,6 @@ async function refrescar() {
   }
   document.getElementById("sin-trades").hidden = trades.length > 0;
 
-  // eventos
   const ul = document.getElementById("eventos");
   ul.innerHTML = "";
   for (const e of (estado.eventos || []).slice(-30).reverse()) {
@@ -174,7 +213,9 @@ function dibujarCurva(historial) {
 }
 
 refrescar();
-setInterval(refrescar, 30_000);
+setInterval(refrescar, 60_000);
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
 </script>
 </body>
 </html>

@@ -40,8 +40,8 @@ class Handler(SimpleHTTPRequestHandler):
             self._json(self._estado())
         elif self.path.startswith("/api/trades"):
             self._json(self._trades())
-        elif self.path in ("/", "/index.html"):
-            self.path = "/dashboard.html"
+        elif self.path == "/":
+            self.path = "/index.html"
             super().do_GET()
         else:
             super().do_GET()
