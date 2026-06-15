@@ -1,19 +1,6 @@
 {
-  "capital": 10200.0,
+  "capital": 10100.0,
   "posiciones": [
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 7500.75,
-      "unidades": 2.799958457802991,
-      "stop": 7536.464815597109,
-      "take_profit": 7429.320368805782,
-      "riesgo_usd": 100.0,
-      "motivo": "Cierre sobre banda superior, RSI 72",
-      "abierta": "2026-06-14 22:39:57"
-    },
     {
       "simbolo": "BTC-USD",
       "nombre": "Bitcoin",
@@ -196,6 +183,10 @@
     {
       "fecha": "2026-06-15 04:03:46",
       "equity": 10140.87
+    },
+    {
+      "fecha": "2026-06-15 10:33:18",
+      "equity": 10073.22
     }
   ],
   "eventos": [
@@ -218,14 +209,18 @@
     {
       "fecha": "2026-06-15 04:03:46",
       "texto": "ABIERTA LONG Bitcoin @ 65869.99 (stop 65121.80, TP 67366.37) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-06-15 10:33:17",
+      "texto": "CERRADA SHORT S&P 500 @ 7536.46 → PnL -100.00 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7519.0,
-    "NQ=F": 30188.75,
-    "BTC-USD": 65810.7890625,
-    "GC=F": 4347.2001953125,
-    "CL=F": 80.51000213623047
+    "ES=F": 7589.5,
+    "NQ=F": 30553.75,
+    "BTC-USD": 65672.5625,
+    "GC=F": 4357.60009765625,
+    "CL=F": 80.33000183105469
   },
-  "actualizado": "2026-06-15 04:03:46"
+  "actualizado": "2026-06-15 10:33:18"
 }
