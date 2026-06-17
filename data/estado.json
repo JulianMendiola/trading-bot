@@ -1,33 +1,6 @@
 {
-  "capital": 10301.999999999998,
-  "posiciones": [
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "long",
-      "entrada": 65869.9921875,
-      "unidades": 0.13564610979772734,
-      "stop": 65121.802595238274,
-      "take_profit": 67366.37137202345,
-      "riesgo_usd": 101.48900758145095,
-      "motivo": "Ruptura del máximo de 20 velas",
-      "abierta": "2026-06-15 04:03:46"
-    },
-    {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 30575.5,
-      "unidades": 1.6095510986048929,
-      "stop": 30639.505423679493,
-      "take_profit": 30447.489152641014,
-      "riesgo_usd": 103.01999999999998,
-      "motivo": "Cierre sobre banda superior, RSI 72",
-      "abierta": "2026-06-17 07:27:33"
-    }
-  ],
+  "capital": 10406.550992418546,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -248,6 +221,10 @@
     {
       "fecha": "2026-06-17 07:27:33",
       "equity": 10260.33
+    },
+    {
+      "fecha": "2026-06-17 12:05:53",
+      "equity": 10406.55
     }
   ],
   "eventos": [
@@ -286,14 +263,22 @@
     {
       "fecha": "2026-06-17 07:27:33",
       "texto": "ABIERTA SHORT Nasdaq @ 30575.50 (stop 30639.51, TP 30447.49) — Cierre sobre banda superior, RSI 72"
+    },
+    {
+      "fecha": "2026-06-17 12:05:53",
+      "texto": "CERRADA SHORT Nasdaq @ 30447.49 → PnL +206.04 USD (take profit)"
+    },
+    {
+      "fecha": "2026-06-17 12:05:53",
+      "texto": "CERRADA LONG Bitcoin @ 65121.80 → PnL -101.49 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7610.25,
-    "NQ=F": 30568.5,
-    "BTC-USD": 65479.76953125,
-    "GC=F": 4352.10009765625,
-    "CL=F": 74.41000366210938
+    "ES=F": 7585.75,
+    "NQ=F": 30413.75,
+    "BTC-USD": 64781.41015625,
+    "GC=F": 4343.39990234375,
+    "CL=F": 76.16999816894531
   },
-  "actualizado": "2026-06-17 07:27:33"
+  "actualizado": "2026-06-17 12:05:53"
 }
