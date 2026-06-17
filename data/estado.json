@@ -1,6 +1,20 @@
 {
   "capital": 10406.550992418546,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "GC=F",
+      "nombre": "Oro",
+      "estrategia": "trend_following",
+      "direccion": "long",
+      "entrada": 4383.60009765625,
+      "unidades": 1.5038215783724282,
+      "stop": 4314.399394979265,
+      "take_profit": 4522.001503010221,
+      "riesgo_usd": 104.06550992418546,
+      "motivo": "EMA20 cruzó sobre EMA50",
+      "abierta": "2026-06-17 18:34:26"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -229,6 +243,10 @@
     {
       "fecha": "2026-06-17 16:03:47",
       "equity": 10406.55
+    },
+    {
+      "fecha": "2026-06-17 18:34:26",
+      "equity": 10308.65
     }
   ],
   "eventos": [
@@ -275,14 +293,18 @@
     {
       "fecha": "2026-06-17 12:05:53",
       "texto": "CERRADA LONG Bitcoin @ 65121.80 → PnL -101.49 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-06-17 18:34:26",
+      "texto": "ABIERTA LONG Oro @ 4383.60 (stop 4314.40, TP 4522.00) — EMA20 cruzó sobre EMA50"
     }
   ],
   "precios": {
-    "ES=F": 7586.5,
-    "NQ=F": 30432.0,
-    "BTC-USD": 65768.28125,
-    "GC=F": 4378.0,
-    "CL=F": 75.88999938964844
+    "ES=F": 7542.5,
+    "NQ=F": 30235.5,
+    "BTC-USD": 65307.21875,
+    "GC=F": 4318.5,
+    "CL=F": 75.91999816894531
   },
-  "actualizado": "2026-06-17 16:03:47"
+  "actualizado": "2026-06-17 18:34:26"
 }
