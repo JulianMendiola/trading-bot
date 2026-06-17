@@ -4,3 +4,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-06-15 16:09:41,2026-06-16 22:00:07,ES=F,S&P 500,mean_reversion,short,7636.0000,7600.0991,5.626601,202.00,take profit
 2026-06-17 07:27:33,2026-06-17 12:05:53,NQ=F,Nasdaq,mean_reversion,short,30575.5000,30447.4892,1.609551,206.04,take profit
 2026-06-15 04:03:46,2026-06-17 12:05:53,BTC-USD,Bitcoin,momentum_breakout,long,65869.9922,65121.8026,0.135646,-101.49,stop loss
+2026-06-17 18:34:26,2026-06-17 20:56:10,GC=F,Oro,trend_following,long,4383.6001,4314.3994,1.503822,-104.07,stop loss
