@@ -13,6 +13,19 @@
       "riesgo_usd": 104.06550992418546,
       "motivo": "Ruptura del mínimo de 20 velas",
       "abierta": "2026-06-17 20:56:10"
+    },
+    {
+      "simbolo": "NQ=F",
+      "nombre": "Nasdaq",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 30506.5,
+      "unidades": 1.3984825435430746,
+      "stop": 30433.567859701776,
+      "take_profit": 30652.36428059645,
+      "riesgo_usd": 101.99432507030106,
+      "motivo": "Cierre bajo banda inferior, RSI 28",
+      "abierta": "2026-06-21 22:12:58"
     }
   ],
   "historial_equity": [
@@ -403,6 +416,10 @@
     {
       "fecha": "2026-06-21 20:53:35",
       "equity": 10249.1
+    },
+    {
+      "fecha": "2026-06-21 22:12:59",
+      "equity": 10388.12
     }
   ],
   "eventos": [
@@ -469,14 +486,18 @@
     {
       "fecha": "2026-06-18 09:45:40",
       "texto": "CERRADA SHORT Oro @ 4342.30 → PnL -103.05 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-06-21 22:12:58",
+      "texto": "ABIERTA LONG Nasdaq @ 30506.50 (stop 30433.57, TP 30652.36) — Cierre bajo banda inferior, RSI 28"
     }
   ],
   "precios": {
-    "ES=F": 7536.75,
-    "NQ=F": 30506.5,
-    "BTC-USD": 63697.5390625,
-    "GC=F": 4167.5,
-    "CL=F": 75.26000213623047
+    "ES=F": 7548.5,
+    "NQ=F": 30595.25,
+    "BTC-USD": 63533.671875,
+    "GC=F": 4171.7001953125,
+    "CL=F": 77.6500015258789
   },
-  "actualizado": "2026-06-21 20:53:35"
+  "actualizado": "2026-06-21 22:12:59"
 }
