@@ -9,3 +9,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-06-21 22:12:58,2026-06-21 23:45:55,NQ=F,Nasdaq,mean_reversion,long,30506.5000,30433.5679,1.398483,-101.99,stop loss
 2026-06-17 20:56:10,2026-06-22 15:23:10,BTC-USD,Bitcoin,momentum_breakout,short,64243.6914,65388.0113,0.090941,-104.07,stop loss
 2026-06-23 04:40:01,2026-06-23 08:20:06,ES=F,S&P 500,mean_reversion,long,7501.7500,7481.5147,4.938590,-99.93,stop loss
+2026-06-24 15:07:14,2026-06-24 19:09:52,BTC-USD,Bitcoin,momentum_breakout,short,61017.9805,59302.6692,0.115354,197.87,take profit
