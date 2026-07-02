@@ -14,3 +14,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-06-27 14:12:40,2026-06-28 16:48:34,BTC-USD,Bitcoin,momentum_breakout,long,60483.1992,59762.6387,0.142849,-102.93,stop loss
 2026-06-28 18:03:50,2026-06-29 11:31:25,BTC-USD,Bitcoin,momentum_breakout,short,59493.1094,60080.0607,0.173612,-101.90,stop loss
 2026-07-01 13:53:14,2026-07-01 20:23:37,NQ=F,Nasdaq,mean_reversion,long,30235.5000,30137.3049,1.027373,-100.88,stop loss
+2026-07-01 16:25:10,2026-07-02 15:40:11,BTC-USD,Bitcoin,momentum_breakout,long,60087.6992,62061.0078,0.102292,201.85,take profit
