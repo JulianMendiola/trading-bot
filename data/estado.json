@@ -1,5 +1,5 @@
 {
-  "capital": 10087.378137921756,
+  "capital": 9986.504356542539,
   "posiciones": [
     {
       "simbolo": "GC=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 102.4368596122075,
       "motivo": "EMA20 cruzó sobre EMA50",
       "abierta": "2026-07-06 05:38:02"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "long",
-      "entrada": 64435.98828125,
-      "unidades": 0.10780548824418425,
-      "stop": 63500.28655565015,
-      "take_profit": 66307.3917324497,
-      "riesgo_usd": 100.87378137921756,
-      "motivo": "Ruptura del máximo de 20 velas",
-      "abierta": "2026-07-06 22:02:52"
     }
   ],
   "historial_equity": [
@@ -1072,6 +1059,10 @@
     {
       "fecha": "2026-07-07 01:23:52",
       "equity": 9985.71
+    },
+    {
+      "fecha": "2026-07-07 05:35:08",
+      "equity": 9910.72
     }
   ],
   "eventos": [
@@ -1226,14 +1217,18 @@
     {
       "fecha": "2026-07-06 22:02:52",
       "texto": "ABIERTA LONG Bitcoin @ 64435.99 (stop 63500.29, TP 66307.39) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-07 05:35:08",
+      "texto": "CERRADA LONG Bitcoin @ 63500.29 → PnL -100.87 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7585.25,
-    "NQ=F": 29806.75,
-    "BTC-USD": 63997.8984375,
-    "GC=F": 4153.7998046875,
-    "CL=F": 68.73999786376953
+    "ES=F": 7565.0,
+    "NQ=F": 29586.5,
+    "BTC-USD": 63076.0,
+    "GC=F": 4136.89990234375,
+    "CL=F": 69.13999938964844
   },
-  "actualizado": "2026-07-07 01:23:52"
+  "actualizado": "2026-07-07 05:35:08"
 }
