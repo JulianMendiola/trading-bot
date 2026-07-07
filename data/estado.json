@@ -1,19 +1,6 @@
 {
-  "capital": 9986.504356542539,
+  "capital": 9884.06749693033,
   "posiciones": [
-    {
-      "simbolo": "GC=F",
-      "nombre": "Oro",
-      "estrategia": "trend_following",
-      "direccion": "long",
-      "entrada": 4196.89990234375,
-      "unidades": 1.2630625373053965,
-      "stop": 4115.797932657637,
-      "take_profit": 4359.103841715976,
-      "riesgo_usd": 102.4368596122075,
-      "motivo": "EMA20 cruzó sobre EMA50",
-      "abierta": "2026-07-06 05:38:02"
-    },
     {
       "simbolo": "ES=F",
       "nombre": "S&P 500",
@@ -1096,6 +1083,10 @@
     {
       "fecha": "2026-07-07 19:03:36",
       "equity": 9950.76
+    },
+    {
+      "fecha": "2026-07-07 20:57:44",
+      "equity": 9903.51
     }
   ],
   "eventos": [
@@ -1262,14 +1253,18 @@
     {
       "fecha": "2026-07-07 14:28:12",
       "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.91)"
+    },
+    {
+      "fecha": "2026-07-07 20:57:44",
+      "texto": "CERRADA LONG Oro @ 4115.80 → PnL -102.44 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7554.25,
-    "NQ=F": 29412.0,
-    "BTC-USD": 63594.69140625,
-    "GC=F": 4139.0,
-    "CL=F": 71.19000244140625
+    "ES=F": 7551.25,
+    "NQ=F": 29415.5,
+    "BTC-USD": 63621.94921875,
+    "GC=F": 4116.10009765625,
+    "CL=F": 72.26000213623047
   },
-  "actualizado": "2026-07-07 19:03:36"
+  "actualizado": "2026-07-07 20:57:44"
 }
