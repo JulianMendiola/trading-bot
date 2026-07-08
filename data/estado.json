@@ -1,20 +1,6 @@
 {
-  "capital": 9884.06749693033,
-  "posiciones": [
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 7548.0,
-      "unidades": 5.981547139034086,
-      "stop": 7531.304479385654,
-      "take_profit": 7581.391041228691,
-      "riesgo_usd": 99.86504356542538,
-      "motivo": "Cierre bajo banda inferior, RSI 23",
-      "abierta": "2026-07-07 14:28:12"
-    }
-  ],
+  "capital": 9784.202453364907,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -1111,6 +1097,10 @@
     {
       "fecha": "2026-07-08 09:36:13",
       "equity": 9884.07
+    },
+    {
+      "fecha": "2026-07-08 11:30:04",
+      "equity": 9784.2
     }
   ],
   "eventos": [
@@ -1281,10 +1271,18 @@
     {
       "fecha": "2026-07-07 20:57:44",
       "texto": "CERRADA LONG Oro @ 4115.80 → PnL -102.44 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-08 11:30:04",
+      "texto": "CERRADA LONG S&P 500 @ 7531.30 → PnL -99.87 USD (stop loss)"
     }
   ],
   "precios": {
-    "CL=F": 75.12000274658203
+    "ES=F": 7485.75,
+    "NQ=F": 29003.75,
+    "BTC-USD": 62069.0390625,
+    "GC=F": 4061.699951171875,
+    "CL=F": 74.20999908447266
   },
-  "actualizado": "2026-07-08 09:36:13"
+  "actualizado": "2026-07-08 11:30:04"
 }
