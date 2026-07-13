@@ -1,5 +1,5 @@
 {
-  "capital": 9783.22403311957,
+  "capital": 9684.423156745492,
   "posiciones": [
     {
       "simbolo": "GC=F",
@@ -15,17 +15,17 @@
       "abierta": "2026-07-09 02:45:36"
     },
     {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 29651.5,
-      "unidades": 0.7152626455227066,
-      "stop": 29513.36769714239,
-      "take_profit": 29927.764605715223,
-      "riesgo_usd": 98.80087637407884,
-      "motivo": "Cierre bajo banda inferior, RSI 28",
-      "abierta": "2026-07-13 04:49:33"
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "short",
+      "entrada": 61829.0,
+      "unidades": 0.13517344011522134,
+      "stop": 62545.444232571914,
+      "take_profit": 60396.11153485618,
+      "riesgo_usd": 96.84423156745493,
+      "motivo": "Ruptura del mínimo de 20 velas",
+      "abierta": "2026-07-13 18:20:47"
     }
   ],
   "historial_equity": [
@@ -1400,6 +1400,10 @@
     {
       "fecha": "2026-07-13 16:30:42",
       "equity": 9805.23
+    },
+    {
+      "fecha": "2026-07-13 18:20:47",
+      "equity": 9794.69
     }
   ],
   "eventos": [
@@ -1606,14 +1610,22 @@
     {
       "fecha": "2026-07-13 08:15:19",
       "texto": "CERRADA LONG Bitcoin @ 62921.40 → PnL -96.86 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-13 18:20:47",
+      "texto": "CERRADA LONG Nasdaq @ 29513.37 → PnL -98.80 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-13 18:20:47",
+      "texto": "ABIERTA SHORT Bitcoin @ 61829.00 (stop 62545.44, TP 60396.11) — Ruptura del mínimo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7578.75,
-    "NQ=F": 29572.75,
-    "BTC-USD": 62213.078125,
-    "GC=F": 4019.39990234375,
-    "CL=F": 75.04000091552734
+    "ES=F": 7565.75,
+    "NQ=F": 29495.25,
+    "BTC-USD": 61773.03125,
+    "GC=F": 3998.800048828125,
+    "CL=F": 77.87000274658203
   },
-  "actualizado": "2026-07-13 16:30:42"
+  "actualizado": "2026-07-13 18:20:47"
 }
