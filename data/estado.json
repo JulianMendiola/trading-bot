@@ -26,6 +26,19 @@
       "riesgo_usd": 96.84423156745493,
       "motivo": "Ruptura del mínimo de 20 velas",
       "abierta": "2026-07-13 18:20:47"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7542.5,
+      "unidades": 6.102281482587954,
+      "stop": 7526.629832122005,
+      "take_profit": 7574.2403357559915,
+      "riesgo_usd": 96.84423156745493,
+      "motivo": "Cierre bajo banda inferior, RSI 30",
+      "abierta": "2026-07-14 00:08:06"
     }
   ],
   "historial_equity": [
@@ -1420,6 +1433,10 @@
     {
       "fecha": "2026-07-13 23:12:28",
       "equity": 9757.2
+    },
+    {
+      "fecha": "2026-07-14 00:08:06",
+      "equity": 9765.96
     }
   ],
   "eventos": [
@@ -1634,14 +1651,22 @@
     {
       "fecha": "2026-07-13 18:20:47",
       "texto": "ABIERTA SHORT Bitcoin @ 61829.00 (stop 62545.44, TP 60396.11) — Ruptura del mínimo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-14 00:08:06",
+      "texto": "ABIERTA LONG S&P 500 @ 7542.50 (stop 7526.63, TP 7574.24) — Cierre bajo banda inferior, RSI 30"
+    },
+    {
+      "fecha": "2026-07-14 00:08:06",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.91)"
     }
   ],
   "precios": {
-    "ES=F": 7551.0,
-    "NQ=F": 29394.0,
-    "BTC-USD": 61962.8515625,
-    "GC=F": 4008.800048828125,
-    "CL=F": 78.83999633789062
+    "ES=F": 7549.5,
+    "NQ=F": 29396.5,
+    "BTC-USD": 62230.66015625,
+    "GC=F": 4006.89990234375,
+    "CL=F": 79.1500015258789
   },
-  "actualizado": "2026-07-13 23:12:28"
+  "actualizado": "2026-07-14 00:08:06"
 }
