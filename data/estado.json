@@ -26,6 +26,19 @@
       "riesgo_usd": 97.81267388312949,
       "motivo": "Ruptura del máximo de 20 velas",
       "abierta": "2026-07-14 16:12:31"
+    },
+    {
+      "simbolo": "NQ=F",
+      "nombre": "Nasdaq",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 29630.75,
+      "unidades": 0.6413201161543385,
+      "stop": 29478.23229250992,
+      "take_profit": 29935.785414980153,
+      "riesgo_usd": 97.81267388312949,
+      "motivo": "Cierre bajo banda inferior, RSI 26",
+      "abierta": "2026-07-15 15:24:44"
     }
   ],
   "historial_equity": [
@@ -1508,6 +1521,10 @@
     {
       "fecha": "2026-07-15 13:49:48",
       "equity": 9829.42
+    },
+    {
+      "fecha": "2026-07-15 15:24:44",
+      "equity": 9867.98
     }
   ],
   "eventos": [
@@ -1742,14 +1759,18 @@
     {
       "fecha": "2026-07-14 16:12:31",
       "texto": "ABIERTA LONG Bitcoin @ 64688.94 (stop 63875.01, TP 66316.81) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-15 15:24:44",
+      "texto": "ABIERTA LONG Nasdaq @ 29630.75 (stop 29478.23, TP 29935.79) — Cierre bajo banda inferior, RSI 26"
     }
   ],
   "precios": {
-    "ES=F": 7618.0,
-    "NQ=F": 29876.5,
-    "BTC-USD": 64926.1796875,
-    "GC=F": 4069.0,
-    "CL=F": 79.8499984741211
+    "ES=F": 7601.5,
+    "NQ=F": 29598.0,
+    "BTC-USD": 65243.6015625,
+    "GC=F": 4050.89990234375,
+    "CL=F": 78.86000061035156
   },
-  "actualizado": "2026-07-15 13:49:48"
+  "actualizado": "2026-07-15 15:24:44"
 }
