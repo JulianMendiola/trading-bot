@@ -1,5 +1,5 @@
 {
-  "capital": 9394.88776393981,
+  "capital": 9300.938886300415,
   "posiciones": [
     {
       "simbolo": "GC=F",
@@ -28,17 +28,17 @@
       "abierta": "2026-07-17 06:37:01"
     },
     {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
+      "simbolo": "NQ=F",
+      "nombre": "Nasdaq",
       "estrategia": "mean_reversion",
       "direccion": "long",
-      "entrada": 7495.0,
-      "unidades": 5.80594147700397,
-      "stop": 7478.818493863311,
-      "take_profit": 7527.363012273378,
-      "riesgo_usd": 93.9488776393981,
-      "motivo": "Cierre bajo banda inferior, RSI 26",
-      "abierta": "2026-07-17 08:57:22"
+      "entrada": 28420.0,
+      "unidades": 0.6620696673174203,
+      "stop": 28279.517217818087,
+      "take_profit": 28700.965564363825,
+      "riesgo_usd": 93.00938886300415,
+      "motivo": "Cierre bajo banda inferior, RSI 19",
+      "abierta": "2026-07-17 14:02:19"
     }
   ],
   "historial_equity": [
@@ -1633,6 +1633,10 @@
     {
       "fecha": "2026-07-17 12:07:39",
       "equity": 9567.01
+    },
+    {
+      "fecha": "2026-07-17 14:02:19",
+      "equity": 9442.5
     }
   ],
   "eventos": [
@@ -1911,14 +1915,22 @@
     {
       "fecha": "2026-07-17 08:57:22",
       "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.91)"
+    },
+    {
+      "fecha": "2026-07-17 14:02:18",
+      "texto": "CERRADA LONG S&P 500 @ 7478.82 → PnL -93.95 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-17 14:02:19",
+      "texto": "ABIERTA LONG Nasdaq @ 28420.00 (stop 28279.52, TP 28700.97) — Cierre bajo banda inferior, RSI 19"
     }
   ],
   "precios": {
-    "ES=F": 7517.75,
-    "NQ=F": 28737.75,
-    "BTC-USD": 63234.609375,
-    "GC=F": 3999.39990234375,
-    "CL=F": 80.13999938964844
+    "ES=F": 7499.0,
+    "NQ=F": 28547.0,
+    "BTC-USD": 63154.0,
+    "GC=F": 3994.0,
+    "CL=F": 81.0999984741211
   },
-  "actualizado": "2026-07-17 12:07:39"
+  "actualizado": "2026-07-17 14:02:19"
 }
