@@ -1,46 +1,6 @@
 {
-  "capital": 9391.842630061457,
-  "posiciones": [
-    {
-      "simbolo": "GC=F",
-      "nombre": "Oro",
-      "estrategia": "trend_following",
-      "direccion": "short",
-      "entrada": 4085.60009765625,
-      "unidades": 1.183219616327007,
-      "stop": 4168.29144521637,
-      "take_profit": 3920.2174025360086,
-      "riesgo_usd": 97.84202453364908,
-      "motivo": "EMA20 cruzó bajo EMA50",
-      "abierta": "2026-07-09 02:45:36"
-    },
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 7537.5,
-      "unidades": 5.686910879010884,
-      "stop": 7554.18206004294,
-      "take_profit": 7504.13587991412,
-      "riesgo_usd": 94.86938874250896,
-      "motivo": "Cierre sobre banda superior, RSI 78",
-      "abierta": "2026-07-22 04:33:17"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "short",
-      "entrada": 65587.7578125,
-      "unidades": 0.16586562490637077,
-      "stop": 66155.3612733673,
-      "take_profit": 64452.55089076538,
-      "riesgo_usd": 94.14590273577502,
-      "motivo": "Ruptura del mínimo de 20 velas",
-      "abierta": "2026-07-22 13:46:38"
-    }
-  ],
+  "capital": 9104.985314049525,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -1929,6 +1889,10 @@
     {
       "fecha": "2026-07-22 15:39:00",
       "equity": 9116.13
+    },
+    {
+      "fecha": "2026-07-22 17:01:03",
+      "equity": 9104.99
     }
   ],
   "eventos": [
@@ -2259,14 +2223,26 @@
     {
       "fecha": "2026-07-22 13:46:38",
       "texto": "ABIERTA SHORT Bitcoin @ 65587.76 (stop 66155.36, TP 64452.55) — Ruptura del mínimo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-22 17:01:02",
+      "texto": "CERRADA SHORT S&P 500 @ 7554.18 → PnL -94.87 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-22 17:01:02",
+      "texto": "CERRADA SHORT Bitcoin @ 66155.36 → PnL -94.15 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-22 17:01:02",
+      "texto": "CERRADA SHORT Oro @ 4168.29 → PnL -97.84 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7559.0,
-    "NQ=F": 29328.25,
-    "BTC-USD": 65962.84375,
-    "GC=F": 4162.7001953125,
-    "CL=F": 86.79000091552734
+    "ES=F": 7559.25,
+    "NQ=F": 29292.5,
+    "BTC-USD": 66209.5625,
+    "GC=F": 4152.2998046875,
+    "CL=F": 86.12000274658203
   },
-  "actualizado": "2026-07-22 15:39:00"
+  "actualizado": "2026-07-22 17:01:03"
 }
