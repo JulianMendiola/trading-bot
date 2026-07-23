@@ -1,6 +1,33 @@
 {
   "capital": 9104.985314049525,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7453.5,
+      "unidades": 4.3732474076403385,
+      "stop": 7432.680264765852,
+      "take_profit": 7495.139470468295,
+      "riesgo_usd": 91.04985314049526,
+      "motivo": "Cierre bajo banda inferior, RSI 22",
+      "abierta": "2026-07-23 13:51:19"
+    },
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "short",
+      "entrada": 65132.140625,
+      "unidades": 0.1592809002813352,
+      "stop": 65710.08625364509,
+      "take_profit": 63976.24936770982,
+      "riesgo_usd": 92.05570004425253,
+      "motivo": "Ruptura del mínimo de 20 velas",
+      "abierta": "2026-07-23 13:51:20"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -1933,6 +1960,10 @@
     {
       "fecha": "2026-07-23 11:50:30",
       "equity": 9104.99
+    },
+    {
+      "fecha": "2026-07-23 13:51:21",
+      "equity": 9245.62
     }
   ],
   "eventos": [
@@ -2275,14 +2306,22 @@
     {
       "fecha": "2026-07-22 17:01:02",
       "texto": "CERRADA SHORT Oro @ 4168.29 → PnL -97.84 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-23 13:51:19",
+      "texto": "ABIERTA LONG S&P 500 @ 7453.50 (stop 7432.68, TP 7495.14) — Cierre bajo banda inferior, RSI 22"
+    },
+    {
+      "fecha": "2026-07-23 13:51:20",
+      "texto": "ABIERTA SHORT Bitcoin @ 65132.14 (stop 65710.09, TP 63976.25) — Ruptura del mínimo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7491.25,
-    "NQ=F": 28918.5,
-    "BTC-USD": 65542.6328125,
-    "GC=F": 4079.0,
-    "CL=F": 91.0999984741211
+    "ES=F": 7476.5,
+    "NQ=F": 28822.75,
+    "BTC-USD": 64880.671875,
+    "GC=F": 4059.89990234375,
+    "CL=F": 91.44000244140625
   },
-  "actualizado": "2026-07-23 11:50:30"
+  "actualizado": "2026-07-23 13:51:21"
 }
