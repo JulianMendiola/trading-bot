@@ -1,33 +1,6 @@
 {
-  "capital": 9198.046860997536,
-  "posiciones": [
-    {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 28322.25,
-      "unidades": 0.661473201454013,
-      "stop": 28185.979393101716,
-      "take_profit": 28594.791213796572,
-      "riesgo_usd": 90.13935460909032,
-      "motivo": "Cierre bajo banda inferior, RSI 22",
-      "abierta": "2026-07-24 14:58:41"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "long",
-      "entrada": 64353.7890625,
-      "unidades": 0.28802940559417317,
-      "stop": 64035.36366027347,
-      "take_profit": 64990.63986695307,
-      "riesgo_usd": 91.71587932939376,
-      "motivo": "Ruptura del máximo de 20 velas",
-      "abierta": "2026-07-25 19:08:17"
-    }
-  ],
+  "capital": 9561.757328874504,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -2164,6 +2137,10 @@
     {
       "fecha": "2026-07-26 21:57:55",
       "equity": 9301.85
+    },
+    {
+      "fecha": "2026-07-26 23:01:55",
+      "equity": 9561.76
     }
   ],
   "eventos": [
@@ -2530,14 +2507,22 @@
     {
       "fecha": "2026-07-25 19:08:17",
       "texto": "ABIERTA LONG Bitcoin @ 64353.79 (stop 64035.36, TP 64990.64) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-26 23:01:54",
+      "texto": "CERRADA LONG Nasdaq @ 28594.79 → PnL +180.28 USD (take profit)"
+    },
+    {
+      "fecha": "2026-07-26 23:01:54",
+      "texto": "CERRADA LONG Bitcoin @ 64990.64 → PnL +183.43 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7447.5,
-    "NQ=F": 28282.25,
-    "BTC-USD": 64806.03125,
-    "GC=F": 4070.800048828125,
-    "CL=F": 89.30999755859375
+    "ES=F": 7494.5,
+    "NQ=F": 28630.25,
+    "BTC-USD": 65399.12890625,
+    "GC=F": 4094.60009765625,
+    "CL=F": 84.7699966430664
   },
-  "actualizado": "2026-07-26 21:57:55"
+  "actualizado": "2026-07-26 23:01:55"
 }
