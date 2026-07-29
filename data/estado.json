@@ -26,6 +26,19 @@
       "riesgo_usd": 94.76362749134884,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-07-29 01:09:53"
+    },
+    {
+      "simbolo": "NQ=F",
+      "nombre": "Nasdaq",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 27691.5,
+      "unidades": 0.5382319946141607,
+      "stop": 27515.625287045194,
+      "take_profit": 28043.24942590961,
+      "riesgo_usd": 94.66139755585759,
+      "motivo": "Cierre bajo banda inferior, RSI 25",
+      "abierta": "2026-07-29 04:30:50"
     }
   ],
   "historial_equity": [
@@ -2268,6 +2281,10 @@
     {
       "fecha": "2026-07-29 01:09:53",
       "equity": 9464.54
+    },
+    {
+      "fecha": "2026-07-29 04:30:50",
+      "equity": 9451.28
     }
   ],
   "eventos": [
@@ -2658,14 +2675,18 @@
     {
       "fecha": "2026-07-29 01:09:53",
       "texto": "ABIERTA SHORT Petróleo @ 81.89 (stop 86.30, TP 73.08) — EMA20 cruzó bajo EMA50"
+    },
+    {
+      "fecha": "2026-07-29 04:30:50",
+      "texto": "ABIERTA LONG Nasdaq @ 27691.50 (stop 27515.63, TP 28043.25) — Cierre bajo banda inferior, RSI 25"
     }
   ],
   "precios": {
-    "ES=F": 7487.0,
-    "NQ=F": 28018.5,
-    "BTC-USD": 63825.7890625,
-    "GC=F": 4021.699951171875,
-    "CL=F": 82.44000244140625
+    "ES=F": 7443.75,
+    "NQ=F": 27661.0,
+    "BTC-USD": 63704.23828125,
+    "GC=F": 4019.300048828125,
+    "CL=F": 82.4800033569336
   },
-  "actualizado": "2026-07-29 01:09:53"
+  "actualizado": "2026-07-29 04:30:50"
 }
