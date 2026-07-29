@@ -26,6 +26,19 @@
       "riesgo_usd": 95.95449992291812,
       "motivo": "Ruptura del máximo de 20 velas",
       "abierta": "2026-07-29 07:31:04"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7404.75,
+      "unidades": 3.5701552410453936,
+      "stop": 7377.97020890514,
+      "take_profit": 7458.3095821897205,
+      "riesgo_usd": 95.60801153141617,
+      "motivo": "Cierre bajo banda inferior, RSI 19",
+      "abierta": "2026-07-29 14:53:05"
     }
   ],
   "historial_equity": [
@@ -2284,6 +2297,10 @@
     {
       "fecha": "2026-07-29 12:28:48",
       "equity": 9497.77
+    },
+    {
+      "fecha": "2026-07-29 14:53:05",
+      "equity": 9413.85
     }
   ],
   "eventos": [
@@ -2690,14 +2707,22 @@
     {
       "fecha": "2026-07-29 10:17:35",
       "texto": "CERRADA SHORT Oro @ 4084.28 → PnL -94.66 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-07-29 14:53:05",
+      "texto": "ABIERTA LONG S&P 500 @ 7404.75 (stop 7377.97, TP 7458.31) — Cierre bajo banda inferior, RSI 19"
+    },
+    {
+      "fecha": "2026-07-29 14:53:05",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.90)"
     }
   ],
   "precios": {
-    "ES=F": 7461.5,
-    "NQ=F": 27894.25,
-    "BTC-USD": 64282.578125,
-    "GC=F": 4081.0,
-    "CL=F": 84.3499984741211
+    "ES=F": 7395.75,
+    "NQ=F": 27521.0,
+    "BTC-USD": 64036.05078125,
+    "GC=F": 4061.5,
+    "CL=F": 85.0999984741211
   },
-  "actualizado": "2026-07-29 12:28:48"
+  "actualizado": "2026-07-29 14:53:05"
 }
