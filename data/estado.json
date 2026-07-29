@@ -1,19 +1,6 @@
 {
-  "capital": 9466.139755585758,
+  "capital": 9560.801153141616,
   "posiciones": [
-    {
-      "simbolo": "GC=F",
-      "nombre": "Oro",
-      "estrategia": "trend_following",
-      "direccion": "short",
-      "entrada": 4027.800048828125,
-      "unidades": 1.675873752389996,
-      "stop": 4084.284851111626,
-      "take_profit": 3914.8304442611234,
-      "riesgo_usd": 94.66139755585759,
-      "motivo": "EMA20 cruzó bajo EMA50",
-      "abierta": "2026-07-28 13:19:30"
-    },
     {
       "simbolo": "CL=F",
       "nombre": "Petróleo",
@@ -26,19 +13,6 @@
       "riesgo_usd": 94.76362749134884,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-07-29 01:09:53"
-    },
-    {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 27691.5,
-      "unidades": 0.5382319946141607,
-      "stop": 27515.625287045194,
-      "take_profit": 28043.24942590961,
-      "riesgo_usd": 94.66139755585759,
-      "motivo": "Cierre bajo banda inferior, RSI 25",
-      "abierta": "2026-07-29 04:30:50"
     },
     {
       "simbolo": "BTC-USD",
@@ -2302,6 +2276,10 @@
     {
       "fecha": "2026-07-29 07:31:04",
       "equity": 9568.1
+    },
+    {
+      "fecha": "2026-07-29 10:17:35",
+      "equity": 9581.15
     }
   ],
   "eventos": [
@@ -2700,14 +2678,22 @@
     {
       "fecha": "2026-07-29 07:31:04",
       "texto": "ABIERTA LONG Bitcoin @ 64352.60 (stop 63689.30, TP 65679.20) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-29 10:17:35",
+      "texto": "CERRADA LONG Nasdaq @ 28043.25 → PnL +189.32 USD (take profit)"
+    },
+    {
+      "fecha": "2026-07-29 10:17:35",
+      "texto": "CERRADA SHORT Oro @ 4084.28 → PnL -94.66 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7479.25,
-    "NQ=F": 27931.75,
-    "BTC-USD": 64407.73046875,
-    "GC=F": 4044.89990234375,
-    "CL=F": 82.19999694824219
+    "ES=F": 7482.0,
+    "NQ=F": 28014.75,
+    "BTC-USD": 64595.8515625,
+    "GC=F": 4090.800048828125,
+    "CL=F": 82.58000183105469
   },
-  "actualizado": "2026-07-29 07:31:04"
+  "actualizado": "2026-07-29 10:17:35"
 }
