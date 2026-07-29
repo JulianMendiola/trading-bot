@@ -13,6 +13,19 @@
       "riesgo_usd": 94.66139755585759,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-07-28 13:19:30"
+    },
+    {
+      "simbolo": "CL=F",
+      "nombre": "Petróleo",
+      "estrategia": "trend_following",
+      "direccion": "short",
+      "entrada": 81.88999938964844,
+      "unidades": 21.50410313575604,
+      "stop": 86.29676896720781,
+      "take_profit": 73.07646023452969,
+      "riesgo_usd": 94.76362749134884,
+      "motivo": "EMA20 cruzó bajo EMA50",
+      "abierta": "2026-07-29 01:09:53"
     }
   ],
   "historial_equity": [
@@ -2251,6 +2264,10 @@
     {
       "fecha": "2026-07-28 23:42:00",
       "equity": 9483.23
+    },
+    {
+      "fecha": "2026-07-29 01:09:53",
+      "equity": 9464.54
     }
   ],
   "eventos": [
@@ -2637,14 +2654,18 @@
     {
       "fecha": "2026-07-28 13:19:30",
       "texto": "ABIERTA SHORT Oro @ 4027.80 (stop 4084.28, TP 3914.83) — EMA20 cruzó bajo EMA50"
+    },
+    {
+      "fecha": "2026-07-29 01:09:53",
+      "texto": "ABIERTA SHORT Petróleo @ 81.89 (stop 86.30, TP 73.08) — EMA20 cruzó bajo EMA50"
     }
   ],
   "precios": {
-    "ES=F": 7469.5,
-    "NQ=F": 27908.75,
-    "BTC-USD": 63717.671875,
-    "GC=F": 4017.60009765625,
-    "CL=F": 82.58999633789062
+    "ES=F": 7487.0,
+    "NQ=F": 28018.5,
+    "BTC-USD": 63825.7890625,
+    "GC=F": 4021.699951171875,
+    "CL=F": 82.44000244140625
   },
-  "actualizado": "2026-07-28 23:42:00"
+  "actualizado": "2026-07-29 01:09:53"
 }
