@@ -26,6 +26,19 @@
       "riesgo_usd": 96.5606267628153,
       "motivo": "Ruptura del mínimo de 20 velas",
       "abierta": "2026-07-29 21:25:56"
+    },
+    {
+      "simbolo": "GC=F",
+      "nombre": "Oro",
+      "estrategia": "trend_following",
+      "direccion": "long",
+      "entrada": 4142.0,
+      "unidades": 1.2416945038489613,
+      "stop": 4064.39654421103,
+      "take_profit": 4297.20691157794,
+      "riesgo_usd": 96.35978453285023,
+      "motivo": "EMA20 cruzó sobre EMA50",
+      "abierta": "2026-07-30 01:01:50"
     }
   ],
   "historial_equity": [
@@ -2316,6 +2329,10 @@
     {
       "fecha": "2026-07-29 23:32:26",
       "equity": 9542.27
+    },
+    {
+      "fecha": "2026-07-30 01:01:50",
+      "equity": 9557.96
     }
   ],
   "eventos": [
@@ -2742,14 +2759,18 @@
     {
       "fecha": "2026-07-29 21:25:56",
       "texto": "ABIERTA SHORT Bitcoin @ 63437.01 (stop 64329.18, TP 61652.68) — Ruptura del mínimo de 20 velas"
+    },
+    {
+      "fecha": "2026-07-30 01:01:50",
+      "texto": "ABIERTA LONG Oro @ 4142.00 (stop 4064.40, TP 4297.21) — EMA20 cruzó sobre EMA50"
     }
   ],
   "precios": {
-    "ES=F": 7377.0,
-    "NQ=F": 27501.0,
-    "BTC-USD": 63944.0,
-    "GC=F": 4151.7998046875,
-    "CL=F": 84.62999725341797
+    "ES=F": 7373.25,
+    "NQ=F": 27514.25,
+    "BTC-USD": 63622.578125,
+    "GC=F": 4123.5,
+    "CL=F": 84.44999694824219
   },
-  "actualizado": "2026-07-29 23:32:26"
+  "actualizado": "2026-07-30 01:01:50"
 }
