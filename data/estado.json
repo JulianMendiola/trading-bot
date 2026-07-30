@@ -1,5 +1,5 @@
 {
-  "capital": 9656.06267628153,
+  "capital": 9559.502049518715,
   "posiciones": [
     {
       "simbolo": "CL=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 94.76362749134884,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-07-29 01:09:53"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "short",
-      "entrada": 63437.01171875,
-      "unidades": 0.10823199846554543,
-      "stop": 64329.17510972309,
-      "take_profit": 61652.68493680382,
-      "riesgo_usd": 96.5606267628153,
-      "motivo": "Ruptura del mínimo de 20 velas",
-      "abierta": "2026-07-29 21:25:56"
     },
     {
       "simbolo": "GC=F",
@@ -2345,6 +2332,10 @@
     {
       "fecha": "2026-07-30 09:41:02",
       "equity": 9471.18
+    },
+    {
+      "fecha": "2026-07-30 11:32:59",
+      "equity": 9512.99
     }
   ],
   "eventos": [
@@ -2775,14 +2766,18 @@
     {
       "fecha": "2026-07-30 01:01:50",
       "texto": "ABIERTA LONG Oro @ 4142.00 (stop 4064.40, TP 4297.21) — EMA20 cruzó sobre EMA50"
+    },
+    {
+      "fecha": "2026-07-30 11:32:59",
+      "texto": "CERRADA SHORT Bitcoin @ 64329.18 → PnL -96.56 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7381.25,
-    "NQ=F": 27545.0,
-    "BTC-USD": 64475.1796875,
-    "GC=F": 4123.60009765625,
-    "CL=F": 84.19999694824219
+    "ES=F": 7393.0,
+    "NQ=F": 27679.75,
+    "BTC-USD": 64487.05859375,
+    "GC=F": 4137.10009765625,
+    "CL=F": 83.7699966430664
   },
-  "actualizado": "2026-07-30 09:41:02"
+  "actualizado": "2026-07-30 11:32:59"
 }
