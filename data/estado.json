@@ -1,19 +1,6 @@
 {
-  "capital": 9653.185169603998,
+  "capital": 9558.421542112648,
   "posiciones": [
-    {
-      "simbolo": "CL=F",
-      "nombre": "Petróleo",
-      "estrategia": "trend_following",
-      "direccion": "short",
-      "entrada": 81.88999938964844,
-      "unidades": 21.50410313575604,
-      "stop": 86.29676896720781,
-      "take_profit": 73.07646023452969,
-      "riesgo_usd": 94.76362749134884,
-      "motivo": "EMA20 cruzó bajo EMA50",
-      "abierta": "2026-07-29 01:09:53"
-    },
     {
       "simbolo": "GC=F",
       "nombre": "Oro",
@@ -2392,6 +2379,10 @@
     {
       "fecha": "2026-07-31 16:05:53",
       "equity": 9556.27
+    },
+    {
+      "fecha": "2026-07-31 17:51:20",
+      "equity": 9515.46
     }
   ],
   "eventos": [
@@ -2842,14 +2833,18 @@
     {
       "fecha": "2026-07-31 16:05:53",
       "texto": "CERRADA SHORT Bitcoin @ 62548.24 → PnL +189.28 USD (take profit)"
+    },
+    {
+      "fecha": "2026-07-31 17:51:20",
+      "texto": "CERRADA SHORT Petróleo @ 86.30 → PnL -94.76 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7477.25,
-    "NQ=F": 28262.25,
-    "BTC-USD": 62702.69140625,
-    "GC=F": 4102.39990234375,
-    "CL=F": 84.11000061035156
+    "ES=F": 7509.5,
+    "NQ=F": 28456.0,
+    "BTC-USD": 63089.98828125,
+    "GC=F": 4107.39990234375,
+    "CL=F": 84.69999694824219
   },
-  "actualizado": "2026-07-31 16:05:53"
+  "actualizado": "2026-07-31 17:51:20"
 }
