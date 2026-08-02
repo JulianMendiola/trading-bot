@@ -51,3 +51,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-07-30 13:14:33,2026-07-31 03:41:40,BTC-USD,Bitcoin,momentum_breakout,long,64839.6016,64179.7823,0.144881,-95.60,stop loss
 2026-07-31 09:32:22,2026-07-31 16:05:53,BTC-USD,Bitcoin,momentum_breakout,short,63754.5312,62548.2384,0.156909,189.28,take profit
 2026-07-29 01:09:53,2026-07-31 17:51:20,CL=F,Petróleo,trend_following,short,81.8900,86.2968,21.504103,-94.76,stop loss
+2026-08-01 18:40:38,2026-08-02 02:32:46,BTC-USD,Bitcoin,momentum_breakout,short,62652.5781,62982.5074,0.289711,-95.58,stop loss
