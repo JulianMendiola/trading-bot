@@ -1,19 +1,6 @@
 {
-  "capital": 9180.844774356116,
+  "capital": 9373.564343421816,
   "posiciones": [
-    {
-      "simbolo": "GC=F",
-      "nombre": "Oro",
-      "estrategia": "trend_following",
-      "direccion": "long",
-      "entrada": 4142.0,
-      "unidades": 1.2416945038489613,
-      "stop": 4064.39654421103,
-      "take_profit": 4297.20691157794,
-      "riesgo_usd": 96.35978453285023,
-      "motivo": "EMA20 cruzó sobre EMA50",
-      "abierta": "2026-07-30 01:01:50"
-    },
     {
       "simbolo": "CL=F",
       "nombre": "Petróleo",
@@ -26,6 +13,19 @@
       "riesgo_usd": 93.35055467653382,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-03 02:50:41"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7756.0,
+      "unidades": 3.974846674006818,
+      "stop": 7732.902644234321,
+      "take_profit": 7802.194711531358,
+      "riesgo_usd": 91.80844774356116,
+      "motivo": "Cierre bajo banda inferior, RSI 26",
+      "abierta": "2026-08-05 16:40:01"
     }
   ],
   "historial_equity": [
@@ -2656,6 +2656,10 @@
     {
       "fecha": "2026-08-05 14:53:31",
       "equity": 9497.66
+    },
+    {
+      "fecha": "2026-08-05 16:40:01",
+      "equity": 9547.88
     }
   ],
   "eventos": [
@@ -3146,14 +3150,22 @@
     {
       "fecha": "2026-08-04 16:58:33",
       "texto": "CERRADA SHORT S&P 500 @ 7727.95 → PnL -93.68 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-05 16:40:01",
+      "texto": "ABIERTA LONG S&P 500 @ 7756.00 (stop 7732.90, TP 7802.19) — Cierre bajo banda inferior, RSI 26"
+    },
+    {
+      "fecha": "2026-08-05 16:40:01",
+      "texto": "CERRADA LONG Oro @ 4297.21 → PnL +192.72 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7791.5,
-    "NQ=F": 29853.5,
-    "BTC-USD": 64358.33984375,
-    "GC=F": 4297.7998046875,
-    "CL=F": 75.01000213623047
+    "ES=F": 7772.25,
+    "NQ=F": 29829.0,
+    "BTC-USD": 64638.421875,
+    "GC=F": 4301.60009765625,
+    "CL=F": 75.63999938964844
   },
-  "actualizado": "2026-08-05 14:53:31"
+  "actualizado": "2026-08-05 16:40:01"
 }
