@@ -1,5 +1,5 @@
 {
-  "capital": 9279.421278203512,
+  "capital": 9187.612830459952,
   "posiciones": [
     {
       "simbolo": "CL=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 93.35055467653382,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-03 02:50:41"
-    },
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 7756.0,
-      "unidades": 3.974846674006818,
-      "stop": 7732.902644234321,
-      "take_profit": 7802.194711531358,
-      "riesgo_usd": 91.80844774356116,
-      "motivo": "Cierre bajo banda inferior, RSI 26",
-      "abierta": "2026-08-05 16:40:01"
     }
   ],
   "historial_equity": [
@@ -2708,6 +2695,10 @@
     {
       "fecha": "2026-08-07 00:14:51",
       "equity": 9277.28
+    },
+    {
+      "fecha": "2026-08-07 03:18:01",
+      "equity": 9247.78
     }
   ],
   "eventos": [
@@ -3214,14 +3205,18 @@
     {
       "fecha": "2026-08-06 14:01:54",
       "texto": "CERRADA LONG Bitcoin @ 64157.10 → PnL -94.14 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-07 03:18:01",
+      "texto": "CERRADA LONG S&P 500 @ 7732.90 → PnL -91.81 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7741.25,
-    "NQ=F": 29610.0,
-    "BTC-USD": 64232.6484375,
-    "GC=F": 4308.0,
-    "CL=F": 78.0999984741211
+    "ES=F": 7733.5,
+    "NQ=F": 29539.75,
+    "BTC-USD": 64277.87890625,
+    "GC=F": 4315.39990234375,
+    "CL=F": 77.93000030517578
   },
-  "actualizado": "2026-08-07 00:14:51"
+  "actualizado": "2026-08-07 03:18:01"
 }
