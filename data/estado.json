@@ -1,5 +1,5 @@
 {
-  "capital": 8561.375642886023,
+  "capital": 8735.380979939771,
   "posiciones": [
     {
       "simbolo": "CL=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 93.35055467653382,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-03 02:50:41"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "short",
-      "entrada": 64494.73046875,
-      "unidades": 0.19752179930878364,
-      "stop": 64935.201691831884,
-      "take_profit": 63613.78802258623,
-      "riesgo_usd": 87.00266852687412,
-      "motivo": "Ruptura del mínimo de 20 velas",
-      "abierta": "2026-08-10 14:35:16"
     }
   ],
   "historial_equity": [
@@ -3176,6 +3163,10 @@
     {
       "fecha": "2026-08-11 15:58:52",
       "equity": 8696.02
+    },
+    {
+      "fecha": "2026-08-11 17:03:35",
+      "equity": 8683.01
     }
   ],
   "eventos": [
@@ -3746,14 +3737,18 @@
     {
       "fecha": "2026-08-11 15:58:51",
       "texto": "CERRADA LONG Nasdaq @ 29702.34 → PnL -86.48 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-11 17:03:34",
+      "texto": "CERRADA SHORT Bitcoin @ 63613.79 → PnL +174.01 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7765.5,
-    "NQ=F": 29675.5,
-    "BTC-USD": 63547.91015625,
-    "GC=F": 4435.7998046875,
+    "ES=F": 7758.5,
+    "NQ=F": 29634.25,
+    "BTC-USD": 63458.859375,
+    "GC=F": 4441.60009765625,
     "CL=F": 83.12999725341797
   },
-  "actualizado": "2026-08-11 15:58:52"
+  "actualizado": "2026-08-11 17:03:35"
 }
