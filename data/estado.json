@@ -13,6 +13,19 @@
       "riesgo_usd": 93.35055467653382,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-03 02:50:41"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "short",
+      "entrada": 7784.75,
+      "unidades": 7.073799014838682,
+      "stop": 7796.853180879863,
+      "take_profit": 7760.543638240274,
+      "riesgo_usd": 85.61546898438971,
+      "motivo": "Cierre sobre banda superior, RSI 78",
+      "abierta": "2026-08-12 13:18:48"
     }
   ],
   "historial_equity": [
@@ -3227,6 +3240,10 @@
     {
       "fecha": "2026-08-12 11:57:55",
       "equity": 8500.52
+    },
+    {
+      "fecha": "2026-08-12 13:18:49",
+      "equity": 8507.51
     }
   ],
   "eventos": [
@@ -3821,14 +3838,22 @@
     {
       "fecha": "2026-08-12 10:00:24",
       "texto": "CERRADA SHORT Nasdaq @ 29831.09 → PnL -86.48 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-12 13:18:48",
+      "texto": "ABIERTA SHORT S&P 500 @ 7784.75 (stop 7796.85, TP 7760.54) — Cierre sobre banda superior, RSI 78"
+    },
+    {
+      "fecha": "2026-08-12 13:18:49",
+      "texto": "SEÑAL OMITIDA SHORT Nasdaq: correlación alta con ES=F (corr 0.91)"
     }
   ],
   "precios": {
-    "ES=F": 7768.5,
-    "NQ=F": 29822.25,
-    "BTC-USD": 64169.98828125,
-    "GC=F": 4473.7998046875,
-    "CL=F": 83.52999877929688
+    "ES=F": 7785.75,
+    "NQ=F": 29931.5,
+    "BTC-USD": 63962.62890625,
+    "GC=F": 4491.60009765625,
+    "CL=F": 82.87999725341797
   },
-  "actualizado": "2026-08-12 11:57:55"
+  "actualizado": "2026-08-12 13:18:49"
 }
