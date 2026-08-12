@@ -1,5 +1,5 @@
 {
-  "capital": 8648.027170140374,
+  "capital": 8561.54689843897,
   "posiciones": [
     {
       "simbolo": "CL=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 93.35055467653382,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-03 02:50:41"
-    },
-    {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 29786.0,
-      "unidades": 1.917887560981982,
-      "stop": 29831.091419049157,
-      "take_profit": 29695.817161901687,
-      "riesgo_usd": 86.48027170140375,
-      "motivo": "Cierre sobre banda superior, RSI 76",
-      "abierta": "2026-08-12 08:46:45"
     }
   ],
   "historial_equity": [
@@ -3228,6 +3215,10 @@
     {
       "fecha": "2026-08-12 08:46:45",
       "equity": 8617.87
+    },
+    {
+      "fecha": "2026-08-12 10:00:24",
+      "equity": 8521.29
     }
   ],
   "eventos": [
@@ -3814,14 +3805,22 @@
     {
       "fecha": "2026-08-12 08:46:45",
       "texto": "ABIERTA SHORT Nasdaq @ 29786.00 (stop 29831.09, TP 29695.82) — Cierre sobre banda superior, RSI 76"
+    },
+    {
+      "fecha": "2026-08-12 10:00:24",
+      "texto": "SEÑAL OMITIDA SHORT S&P 500: correlación alta con NQ=F (corr 0.91)"
+    },
+    {
+      "fecha": "2026-08-12 10:00:24",
+      "texto": "CERRADA SHORT Nasdaq @ 29831.09 → PnL -86.48 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7759.0,
-    "NQ=F": 29769.0,
-    "BTC-USD": 63736.328125,
-    "GC=F": 4464.5,
-    "CL=F": 83.61000061035156
+    "ES=F": 7769.75,
+    "NQ=F": 29826.25,
+    "BTC-USD": 64049.98828125,
+    "GC=F": 4475.2998046875,
+    "CL=F": 82.56999969482422
   },
-  "actualizado": "2026-08-12 08:46:45"
+  "actualizado": "2026-08-12 10:00:24"
 }
