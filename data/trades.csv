@@ -75,3 +75,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-08-17 17:44:35,2026-08-17 21:02:16,ES=F,S&P 500,mean_reversion,long,7776.7500,7765.1214,7.069332,-82.21,stop loss
 2026-08-03 02:50:41,2026-08-18 01:04:06,CL=F,Petróleo,trend_following,short,80.7100,85.0234,21.641735,-93.35,stop loss
 2026-08-18 02:21:07,2026-08-18 03:22:42,ES=F,S&P 500,mean_reversion,long,7761.5000,7753.7723,10.410733,-80.45,stop loss
+2026-08-18 03:22:42,2026-08-18 06:37:57,NQ=F,Nasdaq,mean_reversion,long,29908.2500,29835.5411,1.095411,-79.65,stop loss
