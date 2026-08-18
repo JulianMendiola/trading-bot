@@ -3984,6 +3984,10 @@
     {
       "fecha": "2026-08-18 03:22:43",
       "equity": 7990.98
+    },
+    {
+      "fecha": "2026-08-18 04:06:35",
+      "equity": 7987.44
     }
   ],
   "eventos": [
@@ -4654,14 +4658,18 @@
     {
       "fecha": "2026-08-18 03:22:42",
       "texto": "ABIERTA LONG Nasdaq @ 29908.25 (stop 29835.54, TP 30053.67) — Cierre bajo banda inferior, RSI 18"
+    },
+    {
+      "fecha": "2026-08-18 04:06:34",
+      "texto": "SEÑAL OMITIDA LONG S&P 500: correlación alta con NQ=F (corr 0.92)"
     }
   ],
   "precios": {
-    "ES=F": 7747.0,
-    "NQ=F": 29893.25,
-    "BTC-USD": 64042.05859375,
-    "GC=F": 4456.7998046875,
-    "CL=F": 85.12999725341797
+    "ES=F": 7743.5,
+    "NQ=F": 29887.0,
+    "BTC-USD": 64058.53125,
+    "GC=F": 4446.7998046875,
+    "CL=F": 85.25
   },
-  "actualizado": "2026-08-18 03:22:43"
+  "actualizado": "2026-08-18 04:06:35"
 }
