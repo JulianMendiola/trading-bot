@@ -3988,6 +3988,10 @@
     {
       "fecha": "2026-08-18 04:06:35",
       "equity": 7987.44
+    },
+    {
+      "fecha": "2026-08-18 04:50:58",
+      "equity": 8014.96
     }
   ],
   "eventos": [
@@ -4662,14 +4666,18 @@
     {
       "fecha": "2026-08-18 04:06:34",
       "texto": "SEÑAL OMITIDA LONG S&P 500: correlación alta con NQ=F (corr 0.92)"
+    },
+    {
+      "fecha": "2026-08-18 04:50:58",
+      "texto": "SEÑAL OMITIDA LONG S&P 500: correlación alta con NQ=F (corr 0.92)"
     }
   ],
   "precios": {
-    "ES=F": 7743.5,
-    "NQ=F": 29887.0,
-    "BTC-USD": 64058.53125,
-    "GC=F": 4446.7998046875,
-    "CL=F": 85.25
+    "ES=F": 7741.75,
+    "NQ=F": 29896.0,
+    "BTC-USD": 64146.48046875,
+    "GC=F": 4446.89990234375,
+    "CL=F": 85.1500015258789
   },
-  "actualizado": "2026-08-18 04:06:35"
+  "actualizado": "2026-08-18 04:50:58"
 }
