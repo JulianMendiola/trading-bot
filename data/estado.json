@@ -1,18 +1,18 @@
 {
-  "capital": 8290.98315088389,
+  "capital": 8456.802813901568,
   "posiciones": [
     {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
       "direccion": "long",
-      "entrada": 68519.6328125,
-      "unidades": 0.0809174817181335,
-      "stop": 67495.01081798902,
-      "take_profit": 70568.87680152194,
+      "entrada": 7720.75,
+      "unidades": 7.495632808307784,
+      "stop": 7709.688915015027,
+      "take_profit": 7742.8721699699445,
       "riesgo_usd": 82.9098315088389,
-      "motivo": "Ruptura del máximo de 20 velas",
-      "abierta": "2026-08-19 16:57:07"
+      "motivo": "Cierre bajo banda inferior, RSI 28",
+      "abierta": "2026-08-20 09:04:44"
     }
   ],
   "historial_equity": [
@@ -4295,6 +4295,10 @@
     {
       "fecha": "2026-08-20 08:18:02",
       "equity": 8533.63
+    },
+    {
+      "fecha": "2026-08-20 09:04:45",
+      "equity": 8453.05
     }
   ],
   "eventos": [
@@ -5037,14 +5041,26 @@
     {
       "fecha": "2026-08-19 16:57:07",
       "texto": "ABIERTA LONG Bitcoin @ 68519.63 (stop 67495.01, TP 70568.88) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-08-20 09:04:44",
+      "texto": "ABIERTA LONG S&P 500 @ 7720.75 (stop 7709.69, TP 7742.87) — Cierre bajo banda inferior, RSI 28"
+    },
+    {
+      "fecha": "2026-08-20 09:04:44",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.92)"
+    },
+    {
+      "fecha": "2026-08-20 09:04:44",
+      "texto": "CERRADA LONG Bitcoin @ 70568.88 → PnL +165.82 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7729.75,
-    "NQ=F": 29566.25,
-    "BTC-USD": 71518.328125,
-    "GC=F": 4551.10009765625,
-    "CL=F": 85.44999694824219
+    "ES=F": 7720.25,
+    "NQ=F": 29488.25,
+    "BTC-USD": 71564.6484375,
+    "GC=F": 4548.5,
+    "CL=F": 86.30000305175781
   },
-  "actualizado": "2026-08-20 08:18:02"
+  "actualizado": "2026-08-20 09:04:45"
 }
