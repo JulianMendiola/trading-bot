@@ -1,18 +1,18 @@
 {
-  "capital": 8628.913564405644,
+  "capital": 8801.491835693761,
   "posiciones": [
     {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
+      "simbolo": "NQ=F",
+      "nombre": "Nasdaq",
       "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 7701.0,
-      "unidades": 8.773850005141837,
-      "stop": 7710.834808618051,
-      "take_profit": 7681.330382763897,
-      "riesgo_usd": 86.28913564405644,
-      "motivo": "Cierre sobre banda superior, RSI 72",
-      "abierta": "2026-08-21 12:40:50"
+      "direccion": "long",
+      "entrada": 29303.5,
+      "unidades": 0.8898510124681545,
+      "stop": 29204.590275648716,
+      "take_profit": 29501.319448702572,
+      "riesgo_usd": 88.01491835693761,
+      "motivo": "Cierre bajo banda inferior, RSI 29",
+      "abierta": "2026-08-21 14:18:42"
     }
   ],
   "historial_equity": [
@@ -4463,6 +4463,10 @@
     {
       "fecha": "2026-08-21 13:31:50",
       "equity": 8732.01
+    },
+    {
+      "fecha": "2026-08-21 14:18:42",
+      "equity": 8815.51
     }
   ],
   "eventos": [
@@ -5249,14 +5253,22 @@
     {
       "fecha": "2026-08-21 12:40:50",
       "texto": "ABIERTA SHORT S&P 500 @ 7701.00 (stop 7710.83, TP 7681.33) — Cierre sobre banda superior, RSI 72"
+    },
+    {
+      "fecha": "2026-08-21 14:18:42",
+      "texto": "CERRADA SHORT S&P 500 @ 7681.33 → PnL +172.58 USD (take profit)"
+    },
+    {
+      "fecha": "2026-08-21 14:18:42",
+      "texto": "ABIERTA LONG Nasdaq @ 29303.50 (stop 29204.59, TP 29501.32) — Cierre bajo banda inferior, RSI 29"
     }
   ],
   "precios": {
-    "ES=F": 7689.25,
-    "NQ=F": 29443.5,
-    "BTC-USD": 76685.3671875,
-    "GC=F": 4641.39990234375,
-    "CL=F": 86.75
+    "ES=F": 7688.25,
+    "NQ=F": 29319.25,
+    "BTC-USD": 76770.5390625,
+    "GC=F": 4641.60009765625,
+    "CL=F": 86.33000183105469
   },
-  "actualizado": "2026-08-21 13:31:50"
+  "actualizado": "2026-08-21 14:18:42"
 }
