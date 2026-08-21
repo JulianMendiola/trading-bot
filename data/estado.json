@@ -1,6 +1,20 @@
 {
   "capital": 8628.913564405644,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "short",
+      "entrada": 7701.0,
+      "unidades": 8.773850005141837,
+      "stop": 7710.834808618051,
+      "take_profit": 7681.330382763897,
+      "riesgo_usd": 86.28913564405644,
+      "motivo": "Cierre sobre banda superior, RSI 72",
+      "abierta": "2026-08-21 12:40:50"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -4441,6 +4455,10 @@
     {
       "fecha": "2026-08-21 11:51:34",
       "equity": 8628.91
+    },
+    {
+      "fecha": "2026-08-21 12:40:50",
+      "equity": 8635.49
     }
   ],
   "eventos": [
@@ -5223,14 +5241,18 @@
     {
       "fecha": "2026-08-21 11:51:34",
       "texto": "CERRADA SHORT S&P 500 @ 7695.20 → PnL -85.43 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-21 12:40:50",
+      "texto": "ABIERTA SHORT S&P 500 @ 7701.00 (stop 7710.83, TP 7681.33) — Cierre sobre banda superior, RSI 72"
     }
   ],
   "precios": {
-    "ES=F": 7696.75,
-    "NQ=F": 29512.5,
-    "BTC-USD": 76775.1796875,
-    "GC=F": 4651.5,
-    "CL=F": 86.51000213623047
+    "ES=F": 7700.25,
+    "NQ=F": 29510.5,
+    "BTC-USD": 77269.21875,
+    "GC=F": 4637.10009765625,
+    "CL=F": 86.9800033569336
   },
-  "actualizado": "2026-08-21 11:51:34"
+  "actualizado": "2026-08-21 12:40:50"
 }
