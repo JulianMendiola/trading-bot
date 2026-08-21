@@ -13,6 +13,19 @@
       "riesgo_usd": 85.43478776639256,
       "motivo": "Ruptura del máximo de 20 velas",
       "abierta": "2026-08-21 08:07:27"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "short",
+      "entrada": 7686.5,
+      "unidades": 9.821174524438641,
+      "stop": 7695.1990397690015,
+      "take_profit": 7669.101920461998,
+      "riesgo_usd": 85.43478776639256,
+      "motivo": "Cierre sobre banda superior, RSI 72",
+      "abierta": "2026-08-21 08:57:17"
     }
   ],
   "historial_equity": [
@@ -4431,6 +4444,10 @@
     {
       "fecha": "2026-08-21 08:07:27",
       "equity": 8564.13
+    },
+    {
+      "fecha": "2026-08-21 08:57:17",
+      "equity": 8689.58
     }
   ],
   "eventos": [
@@ -5201,14 +5218,18 @@
     {
       "fecha": "2026-08-21 08:07:27",
       "texto": "ABIERTA LONG Bitcoin @ 76288.12 (stop 74829.40, TP 79205.56) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-08-21 08:57:17",
+      "texto": "ABIERTA SHORT S&P 500 @ 7686.50 (stop 7695.20, TP 7669.10) — Cierre sobre banda superior, RSI 72"
     }
   ],
   "precios": {
-    "ES=F": 7681.0,
-    "NQ=F": 29437.75,
-    "BTC-USD": 76640.65625,
-    "GC=F": 4621.2001953125,
-    "CL=F": 86.38999938964844
+    "ES=F": 7686.5,
+    "NQ=F": 29454.0,
+    "BTC-USD": 78782.6328125,
+    "GC=F": 4639.60009765625,
+    "CL=F": 86.06999969482422
   },
-  "actualizado": "2026-08-21 08:07:27"
+  "actualizado": "2026-08-21 08:57:17"
 }
