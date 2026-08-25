@@ -1,5 +1,5 @@
 {
-  "capital": 8800.46624281507,
+  "capital": 8976.475567671372,
   "posiciones": [
     {
       "simbolo": "BTC-USD",
@@ -15,17 +15,17 @@
       "abierta": "2026-08-24 15:09:56"
     },
     {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
       "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 29389.75,
-      "unidades": 0.975440462972166,
-      "stop": 29479.970434530675,
-      "take_profit": 29209.30913093865,
+      "direccion": "long",
+      "entrada": 7676.5,
+      "unidades": 5.626825504094799,
+      "stop": 7660.859802456268,
+      "take_profit": 7707.780395087463,
       "riesgo_usd": 88.0046624281507,
-      "motivo": "Cierre sobre banda superior, RSI 75",
-      "abierta": "2026-08-25 10:29:06"
+      "motivo": "Cierre bajo banda inferior, RSI 29",
+      "abierta": "2026-08-25 15:04:25"
     }
   ],
   "historial_equity": [
@@ -5092,17 +5092,13 @@
     {
       "fecha": "2026-08-25 14:03:06",
       "equity": 8765.02
+    },
+    {
+      "fecha": "2026-08-25 15:04:26",
+      "equity": 8983.19
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-15 10:33:17",
-      "texto": "CERRADA SHORT S&P 500 @ 7536.46 → PnL -100.00 USD (stop loss)"
-    },
-    {
-      "fecha": "2026-06-15 16:09:41",
-      "texto": "ABIERTA SHORT S&P 500 @ 7636.00 (stop 7653.95, TP 7600.10) — Cierre sobre banda superior, RSI 82"
-    },
     {
       "fecha": "2026-06-16 22:00:07",
       "texto": "CERRADA SHORT S&P 500 @ 7600.10 → PnL +202.00 USD (take profit)"
@@ -5894,14 +5890,22 @@
     {
       "fecha": "2026-08-25 10:29:06",
       "texto": "ABIERTA SHORT Nasdaq @ 29389.75 (stop 29479.97, TP 29209.31) — Cierre sobre banda superior, RSI 75"
+    },
+    {
+      "fecha": "2026-08-25 15:04:25",
+      "texto": "ABIERTA LONG S&P 500 @ 7676.50 (stop 7660.86, TP 7707.78) — Cierre bajo banda inferior, RSI 29"
+    },
+    {
+      "fecha": "2026-08-25 15:04:25",
+      "texto": "CERRADA SHORT Nasdaq @ 29209.31 → PnL +176.01 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7694.5,
-    "NQ=F": 29366.0,
-    "BTC-USD": 78541.390625,
-    "GC=F": 4662.89990234375,
-    "CL=F": 82.25
+    "ES=F": 7680.75,
+    "NQ=F": 29254.25,
+    "BTC-USD": 79207.6796875,
+    "GC=F": 4692.2001953125,
+    "CL=F": 82.38999938964844
   },
-  "actualizado": "2026-08-25 14:03:06"
+  "actualizado": "2026-08-25 15:04:26"
 }
