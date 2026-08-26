@@ -94,3 +94,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-08-23 14:20:04,2026-08-24 14:25:39,BTC-USD,Bitcoin,momentum_breakout,long,77477.2422,79349.7574,0.093860,175.75,take profit
 2026-08-25 10:29:06,2026-08-25 15:04:25,NQ=F,Nasdaq,mean_reversion,short,29389.7500,29209.3091,0.975440,176.01,take profit
 2026-08-24 15:09:56,2026-08-25 22:23:36,BTC-USD,Bitcoin,momentum_breakout,long,79484.3203,78068.5561,0.062161,-88.00,stop loss
+2026-08-26 04:24:15,2026-08-26 16:52:00,CL=F,Petróleo,trend_following,short,80.3400,82.8011,36.407548,-89.60,stop loss
