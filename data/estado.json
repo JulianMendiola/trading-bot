@@ -26,6 +26,19 @@
       "riesgo_usd": 89.6021293042043,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-26 04:24:15"
+    },
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "short",
+      "entrada": 77787.5390625,
+      "unidades": 0.08058085636680498,
+      "stop": 78902.98353196876,
+      "take_profit": 75556.65012356249,
+      "riesgo_usd": 89.88347057940904,
+      "motivo": "Ruptura del mínimo de 20 velas",
+      "abierta": "2026-08-26 15:58:58"
     }
   ],
   "historial_equity": [
@@ -5224,13 +5237,13 @@
     {
       "fecha": "2026-08-26 14:25:53",
       "equity": 8943.35
+    },
+    {
+      "fecha": "2026-08-26 15:58:58",
+      "equity": 8899.11
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-17 12:05:53",
-      "texto": "CERRADA LONG Bitcoin @ 65121.80 → PnL -101.49 USD (stop loss)"
-    },
     {
       "fecha": "2026-06-17 18:34:26",
       "texto": "ABIERTA LONG Oro @ 4383.60 (stop 4314.40, TP 4522.00) — EMA20 cruzó sobre EMA50"
@@ -6026,14 +6039,18 @@
     {
       "fecha": "2026-08-26 04:24:15",
       "texto": "ABIERTA SHORT Petróleo @ 80.34 (stop 82.80, TP 75.42) — EMA20 cruzó bajo EMA50"
+    },
+    {
+      "fecha": "2026-08-26 15:58:58",
+      "texto": "ABIERTA SHORT Bitcoin @ 77787.54 (stop 78902.98, TP 75556.65) — Ruptura del mínimo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7693.5,
-    "NQ=F": 29242.25,
-    "BTC-USD": 78359.3515625,
-    "GC=F": 4676.60009765625,
-    "CL=F": 81.45999908447266
+    "ES=F": 7694.25,
+    "NQ=F": 29280.75,
+    "BTC-USD": 78050.1015625,
+    "GC=F": 4663.39990234375,
+    "CL=F": 82.20999908447266
   },
-  "actualizado": "2026-08-26 14:25:53"
+  "actualizado": "2026-08-26 15:58:58"
 }
