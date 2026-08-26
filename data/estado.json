@@ -5143,13 +5143,13 @@
     {
       "fecha": "2026-08-25 23:48:37",
       "equity": 8943.33
+    },
+    {
+      "fecha": "2026-08-26 01:08:19",
+      "equity": 8882.84
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-17 07:27:33",
-      "texto": "ABIERTA SHORT Nasdaq @ 30575.50 (stop 30639.51, TP 30447.49) — Cierre sobre banda superior, RSI 72"
-    },
     {
       "fecha": "2026-06-17 12:05:53",
       "texto": "CERRADA SHORT Nasdaq @ 30447.49 → PnL +206.04 USD (take profit)"
@@ -5945,14 +5945,18 @@
     {
       "fecha": "2026-08-25 22:23:36",
       "texto": "CERRADA LONG Bitcoin @ 78068.56 → PnL -88.00 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-26 01:08:18",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.90)"
     }
   ],
   "precios": {
-    "ES=F": 7686.25,
-    "NQ=F": 29241.75,
-    "BTC-USD": 78482.921875,
-    "GC=F": 4717.7001953125,
-    "CL=F": 81.04000091552734
+    "ES=F": 7675.5,
+    "NQ=F": 29125.25,
+    "BTC-USD": 78842.5625,
+    "GC=F": 4694.7001953125,
+    "CL=F": 80.66000366210938
   },
-  "actualizado": "2026-08-25 23:48:37"
+  "actualizado": "2026-08-26 01:08:19"
 }
