@@ -1,6 +1,20 @@
 {
   "capital": 8884.994630215906,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "short",
+      "entrada": 77788.4921875,
+      "unidades": 0.07027532575280031,
+      "stop": 79052.80431057284,
+      "take_profit": 75259.8679413543,
+      "riesgo_usd": 88.84994630215907,
+      "motivo": "Ruptura del mínimo de 20 velas",
+      "abierta": "2026-08-28 17:35:56"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -5229,13 +5243,13 @@
     {
       "fecha": "2026-08-28 05:23:50",
       "equity": 8884.99
+    },
+    {
+      "fecha": "2026-08-28 17:35:56",
+      "equity": 8881.21
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-17 22:45:34",
-      "texto": "ABIERTA SHORT Oro @ 4254.30 (stop 4342.30, TP 4078.30) — EMA20 cruzó bajo EMA50"
-    },
     {
       "fecha": "2026-06-18 09:45:40",
       "texto": "CERRADA SHORT Oro @ 4342.30 → PnL -103.05 USD (stop loss)"
@@ -6031,14 +6045,18 @@
     {
       "fecha": "2026-08-27 01:04:38",
       "texto": "CERRADA SHORT Bitcoin @ 78902.98 → PnL -89.88 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-28 17:35:56",
+      "texto": "ABIERTA SHORT Bitcoin @ 77788.49 (stop 79052.80, TP 75259.87) — Ruptura del mínimo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7736.0,
-    "NQ=F": 29623.5,
-    "BTC-USD": 79599.5234375,
-    "GC=F": 4632.10009765625,
-    "CL=F": 83.27999877929688
+    "ES=F": 7716.75,
+    "NQ=F": 29464.5,
+    "BTC-USD": 77842.3671875,
+    "GC=F": 4531.2001953125,
+    "CL=F": 83.38999938964844
   },
-  "actualizado": "2026-08-28 05:23:50"
+  "actualizado": "2026-08-28 17:35:56"
 }
