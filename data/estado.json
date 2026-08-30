@@ -1,6 +1,20 @@
 {
   "capital": 8796.144683913748,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "NQ=F",
+      "nombre": "Nasdaq",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 29371.75,
+      "unidades": 1.0037350440393824,
+      "stop": 29284.11587049392,
+      "take_profit": 29547.01825901216,
+      "riesgo_usd": 87.96144683913748,
+      "motivo": "Cierre bajo banda inferior, RSI 30",
+      "abierta": "2026-08-30 23:54:01"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -5281,13 +5295,13 @@
     {
       "fecha": "2026-08-30 21:36:30",
       "equity": 8796.14
+    },
+    {
+      "fecha": "2026-08-30 23:54:02",
+      "equity": 8773.56
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-21 22:12:58",
-      "texto": "ABIERTA LONG Nasdaq @ 30506.50 (stop 30433.57, TP 30652.36) — Cierre bajo banda inferior, RSI 28"
-    },
     {
       "fecha": "2026-06-21 23:45:55",
       "texto": "CERRADA LONG Nasdaq @ 30433.57 → PnL -101.99 USD (stop loss)"
@@ -6083,14 +6097,18 @@
     {
       "fecha": "2026-08-30 18:42:57",
       "texto": "CERRADA SHORT Bitcoin @ 79052.80 → PnL -88.85 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-08-30 23:54:01",
+      "texto": "ABIERTA LONG Nasdaq @ 29371.75 (stop 29284.12, TP 29547.02) — Cierre bajo banda inferior, RSI 30"
     }
   ],
   "precios": {
-    "ES=F": 7722.0,
-    "NQ=F": 29491.75,
-    "BTC-USD": 78666.9296875,
-    "GC=F": 4529.89990234375,
-    "CL=F": 83.4000015258789
+    "ES=F": 7698.0,
+    "NQ=F": 29349.25,
+    "BTC-USD": 77547.359375,
+    "GC=F": 4497.7998046875,
+    "CL=F": 84.75
   },
-  "actualizado": "2026-08-30 21:36:30"
+  "actualizado": "2026-08-30 23:54:02"
 }
