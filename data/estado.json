@@ -13,6 +13,32 @@
       "riesgo_usd": 87.96144683913748,
       "motivo": "Cierre bajo banda inferior, RSI 30",
       "abierta": "2026-08-30 23:54:01"
+    },
+    {
+      "simbolo": "GC=F",
+      "nombre": "Oro",
+      "estrategia": "trend_following",
+      "direccion": "short",
+      "entrada": 4493.2998046875,
+      "unidades": 1.0205781350622303,
+      "stop": 4580.267087066253,
+      "take_profit": 4319.365239929993,
+      "riesgo_usd": 88.75690686153868,
+      "motivo": "EMA20 cruzó bajo EMA50",
+      "abierta": "2026-08-31 10:05:34"
+    },
+    {
+      "simbolo": "CL=F",
+      "nombre": "Petróleo",
+      "estrategia": "trend_following",
+      "direccion": "long",
+      "entrada": 85.43000030517578,
+      "unidades": 38.4809349379881,
+      "stop": 83.12372272084197,
+      "take_profit": 90.04255547384341,
+      "riesgo_usd": 88.74771767168978,
+      "motivo": "EMA20 cruzó sobre EMA50",
+      "abierta": "2026-08-31 10:05:35"
     }
   ],
   "historial_equity": [
@@ -5303,17 +5329,13 @@
     {
       "fecha": "2026-08-31 03:34:49",
       "equity": 8777.32
+    },
+    {
+      "fecha": "2026-08-31 10:05:35",
+      "equity": 8917.49
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-21 23:45:55",
-      "texto": "CERRADA LONG Nasdaq @ 30433.57 → PnL -101.99 USD (stop loss)"
-    },
-    {
-      "fecha": "2026-06-22 15:23:10",
-      "texto": "CERRADA SHORT Bitcoin @ 65388.01 → PnL -104.07 USD (stop loss)"
-    },
     {
       "fecha": "2026-06-23 04:40:01",
       "texto": "ABIERTA LONG S&P 500 @ 7501.75 (stop 7481.51, TP 7542.22) — Cierre bajo banda inferior, RSI 28"
@@ -6105,14 +6127,22 @@
     {
       "fecha": "2026-08-30 23:54:01",
       "texto": "ABIERTA LONG Nasdaq @ 29371.75 (stop 29284.12, TP 29547.02) — Cierre bajo banda inferior, RSI 30"
+    },
+    {
+      "fecha": "2026-08-31 10:05:34",
+      "texto": "ABIERTA SHORT Oro @ 4493.30 (stop 4580.27, TP 4319.37) — EMA20 cruzó bajo EMA50"
+    },
+    {
+      "fecha": "2026-08-31 10:05:35",
+      "texto": "ABIERTA LONG Petróleo @ 85.43 (stop 83.12, TP 90.04) — EMA20 cruzó sobre EMA50"
     }
   ],
   "precios": {
-    "ES=F": 7693.75,
-    "NQ=F": 29353.0,
-    "BTC-USD": 77678.0703125,
-    "GC=F": 4480.2001953125,
-    "CL=F": 84.97000122070312
+    "ES=F": 7708.0,
+    "NQ=F": 29451.0,
+    "BTC-USD": 78421.65625,
+    "GC=F": 4494.2001953125,
+    "CL=F": 86.54000091552734
   },
-  "actualizado": "2026-08-31 03:34:49"
+  "actualizado": "2026-08-31 10:05:35"
 }
