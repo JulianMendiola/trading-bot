@@ -1,19 +1,6 @@
 {
-  "capital": 8796.144683913748,
+  "capital": 8972.067577592023,
   "posiciones": [
-    {
-      "simbolo": "NQ=F",
-      "nombre": "Nasdaq",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 29371.75,
-      "unidades": 1.0037350440393824,
-      "stop": 29284.11587049392,
-      "take_profit": 29547.01825901216,
-      "riesgo_usd": 87.96144683913748,
-      "motivo": "Cierre bajo banda inferior, RSI 30",
-      "abierta": "2026-08-30 23:54:01"
-    },
     {
       "simbolo": "GC=F",
       "nombre": "Oro",
@@ -5345,13 +5332,13 @@
     {
       "fecha": "2026-09-01 01:17:49",
       "equity": 8960.79
+    },
+    {
+      "fecha": "2026-09-01 06:32:02",
+      "equity": 9029.49
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-23 04:40:01",
-      "texto": "ABIERTA LONG S&P 500 @ 7501.75 (stop 7481.51, TP 7542.22) — Cierre bajo banda inferior, RSI 28"
-    },
     {
       "fecha": "2026-06-23 04:40:01",
       "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.94)"
@@ -6147,14 +6134,18 @@
     {
       "fecha": "2026-08-31 10:05:35",
       "texto": "ABIERTA LONG Petróleo @ 85.43 (stop 83.12, TP 90.04) — EMA20 cruzó sobre EMA50"
+    },
+    {
+      "fecha": "2026-09-01 06:32:02",
+      "texto": "CERRADA LONG Nasdaq @ 29547.02 → PnL +175.92 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7702.75,
-    "NQ=F": 29495.5,
-    "BTC-USD": 78508.4375,
-    "GC=F": 4497.7998046875,
-    "CL=F": 86.5999984741211
+    "ES=F": 7699.25,
+    "NQ=F": 29541.25,
+    "BTC-USD": 78885.0078125,
+    "GC=F": 4481.89990234375,
+    "CL=F": 86.62000274658203
   },
-  "actualizado": "2026-09-01 01:17:49"
+  "actualizado": "2026-09-01 06:32:02"
 }
