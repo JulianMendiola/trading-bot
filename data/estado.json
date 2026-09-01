@@ -1,5 +1,5 @@
 {
-  "capital": 8972.067577592023,
+  "capital": 9149.563012935403,
   "posiciones": [
     {
       "simbolo": "GC=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 88.75690686153868,
       "motivo": "EMA20 cruzó bajo EMA50",
       "abierta": "2026-08-31 10:05:34"
-    },
-    {
-      "simbolo": "CL=F",
-      "nombre": "Petróleo",
-      "estrategia": "trend_following",
-      "direccion": "long",
-      "entrada": 85.43000030517578,
-      "unidades": 38.4809349379881,
-      "stop": 83.12372272084197,
-      "take_profit": 90.04255547384341,
-      "riesgo_usd": 88.74771767168978,
-      "motivo": "EMA20 cruzó sobre EMA50",
-      "abierta": "2026-08-31 10:05:35"
     },
     {
       "simbolo": "BTC-USD",
@@ -5361,13 +5348,13 @@
     {
       "fecha": "2026-09-01 19:36:20",
       "equity": 9266.17
+    },
+    {
+      "fecha": "2026-09-01 22:03:22",
+      "equity": 9263.28
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-06-23 08:20:06",
-      "texto": "CERRADA LONG S&P 500 @ 7481.51 → PnL -99.93 USD (stop loss)"
-    },
     {
       "fecha": "2026-06-24 15:07:14",
       "texto": "ABIERTA SHORT Bitcoin @ 61017.98 (stop 61875.64, TP 59302.67) — Ruptura del mínimo de 20 velas"
@@ -6163,14 +6150,18 @@
     {
       "fecha": "2026-09-01 19:36:19",
       "texto": "ABIERTA SHORT Bitcoin @ 77126.93 (stop 78101.36, TP 75178.07) — Ruptura del mínimo de 20 velas"
+    },
+    {
+      "fecha": "2026-09-01 22:03:22",
+      "texto": "CERRADA LONG Petróleo @ 90.04 → PnL +177.50 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7639.25,
-    "NQ=F": 29116.25,
-    "BTC-USD": 77316.5625,
-    "GC=F": 4382.2001953125,
-    "CL=F": 90.58000183105469
+    "ES=F": 7647.5,
+    "NQ=F": 29139.0,
+    "BTC-USD": 77195.390625,
+    "GC=F": 4375.7001953125,
+    "CL=F": 90.68000030517578
   },
-  "actualizado": "2026-09-01 19:36:20"
+  "actualizado": "2026-09-01 22:03:22"
 }
