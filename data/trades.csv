@@ -101,3 +101,5 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-08-30 23:54:01,2026-09-01 06:32:02,NQ=F,Nasdaq,mean_reversion,long,29371.7500,29547.0183,1.003735,175.92,take profit
 2026-08-31 10:05:35,2026-09-01 22:03:22,CL=F,Petróleo,trend_following,long,85.4300,90.0426,38.480935,177.50,take profit
 2026-09-01 19:36:19,2026-09-03 14:07:10,BTC-USD,Bitcoin,momentum_breakout,short,77126.9297,78101.3589,0.092075,-89.72,stop loss
+2026-09-03 14:07:10,2026-09-03 17:51:08,ES=F,S&P 500,mean_reversion,short,7723.7500,7741.7536,5.082084,-91.50,stop loss
+2026-09-03 14:07:10,2026-09-03 17:51:08,NQ=F,Nasdaq,mean_reversion,short,29345.5000,29455.4289,0.834628,-91.75,stop loss
