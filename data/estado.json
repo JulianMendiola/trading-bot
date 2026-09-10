@@ -5605,13 +5605,13 @@
     {
       "fecha": "2026-09-10 06:19:51",
       "equity": 8958.49
+    },
+    {
+      "fecha": "2026-09-10 11:38:52",
+      "equity": 8891.44
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-01 16:25:10",
-      "texto": "ABIERTA LONG Bitcoin @ 60087.70 (stop 59101.04, TP 62061.01) — Ruptura del máximo de 20 velas"
-    },
     {
       "fecha": "2026-07-01 20:23:37",
       "texto": "CERRADA LONG Nasdaq @ 30137.30 → PnL -100.88 USD (stop loss)"
@@ -6407,14 +6407,18 @@
     {
       "fecha": "2026-09-09 11:08:34",
       "texto": "ABIERTA LONG S&P 500 @ 7654.75 (stop 7641.91, TP 7680.43) — Cierre bajo banda inferior, RSI 24"
+    },
+    {
+      "fecha": "2026-09-10 11:38:52",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.90)"
     }
   ],
   "precios": {
-    "ES=F": 7661.75,
-    "NQ=F": 29463.0,
-    "BTC-USD": 78190.3203125,
-    "GC=F": 4467.0,
-    "CL=F": 95.55000305175781
+    "ES=F": 7644.0,
+    "NQ=F": 29343.25,
+    "BTC-USD": 77989.3671875,
+    "GC=F": 4428.7001953125,
+    "CL=F": 97.43000030517578
   },
-  "actualizado": "2026-09-10 06:19:51"
+  "actualizado": "2026-09-10 11:38:52"
 }
