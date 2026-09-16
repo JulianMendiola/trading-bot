@@ -1,20 +1,6 @@
 {
-  "capital": 8876.59651137615,
-  "posiciones": [
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 7698.75,
-      "unidades": 2.8961487262276377,
-      "stop": 7729.090127702271,
-      "take_profit": 7638.069744595458,
-      "riesgo_usd": 87.8695221985159,
-      "motivo": "Cierre sobre banda superior, RSI 80",
-      "abierta": "2026-09-14 16:27:23"
-    }
-  ],
+  "capital": 9052.335555773181,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -5751,13 +5737,13 @@
     {
       "fecha": "2026-09-16 19:05:34",
       "equity": 9058.33
+    },
+    {
+      "fecha": "2026-09-16 22:10:25",
+      "equity": 9052.34
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-08 11:30:04",
-      "texto": "CERRADA LONG S&P 500 @ 7531.30 → PnL -99.87 USD (stop loss)"
-    },
     {
       "fecha": "2026-07-08 17:07:52",
       "texto": "ABIERTA LONG Petróleo @ 75.84 (stop 73.09, TP 81.34) — EMA20 cruzó sobre EMA50"
@@ -6553,14 +6539,18 @@
     {
       "fecha": "2026-09-16 15:32:55",
       "texto": "SEÑAL OMITIDA SHORT Nasdaq: correlación alta con ES=F (corr 0.92)"
+    },
+    {
+      "fecha": "2026-09-16 22:10:24",
+      "texto": "CERRADA SHORT S&P 500 @ 7638.07 → PnL +175.74 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7636.0,
-    "NQ=F": 29317.0,
-    "BTC-USD": 75876.4296875,
-    "GC=F": 4309.7001953125,
-    "CL=F": 102.4000015258789
+    "ES=F": 7622.75,
+    "NQ=F": 29276.0,
+    "BTC-USD": 75687.1015625,
+    "GC=F": 4299.7998046875,
+    "CL=F": 101.97000122070312
   },
-  "actualizado": "2026-09-16 19:05:34"
+  "actualizado": "2026-09-16 22:10:25"
 }
