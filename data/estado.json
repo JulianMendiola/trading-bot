@@ -1,19 +1,6 @@
 {
-  "capital": 9052.335555773181,
+  "capital": 8961.812200215447,
   "posiciones": [
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 7718.75,
-      "unidades": 9.634193742320914,
-      "stop": 7728.146048904444,
-      "take_profit": 7699.957902191113,
-      "riesgo_usd": 90.52335555773182,
-      "motivo": "Cierre sobre banda superior, RSI 74",
-      "abierta": "2026-09-18 04:59:13"
-    },
     {
       "simbolo": "BTC-USD",
       "nombre": "Bitcoin",
@@ -5800,13 +5787,13 @@
     {
       "fecha": "2026-09-18 04:59:13",
       "equity": 9066.88
+    },
+    {
+      "fecha": "2026-09-18 09:34:50",
+      "equity": 9050.21
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-10 02:48:43",
-      "texto": "ABIERTA LONG Bitcoin @ 63699.99 (stop 62921.40, TP 65257.17) — Ruptura del máximo de 20 velas"
-    },
     {
       "fecha": "2026-07-10 06:43:19",
       "texto": "ABIERTA LONG Nasdaq @ 29789.50 (stop 29717.99, TP 29932.53) — Cierre bajo banda inferior, RSI 29"
@@ -6602,14 +6589,18 @@
     {
       "fecha": "2026-09-18 04:59:13",
       "texto": "ABIERTA LONG Bitcoin @ 77297.70 (stop 76544.27, TP 78804.57) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-09-18 09:34:50",
+      "texto": "CERRADA SHORT S&P 500 @ 7728.15 → PnL -90.52 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7719.25,
-    "NQ=F": 29790.5,
-    "BTC-USD": 77458.921875,
-    "GC=F": 4405.5,
-    "CL=F": 101.01000213623047
+    "ES=F": 7727.5,
+    "NQ=F": 29891.0,
+    "BTC-USD": 78033.84375,
+    "GC=F": 4431.2001953125,
+    "CL=F": 95.45999908447266
   },
-  "actualizado": "2026-09-18 04:59:13"
+  "actualizado": "2026-09-18 09:34:50"
 }
