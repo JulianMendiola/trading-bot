@@ -1,20 +1,6 @@
 {
-  "capital": 9142.762569393488,
-  "posiciones": [
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "long",
-      "entrada": 81604.8203125,
-      "unidades": 0.13114529796751465,
-      "stop": 80907.67274327048,
-      "take_profit": 82999.11545095906,
-      "riesgo_usd": 91.42762569393489,
-      "motivo": "Ruptura del máximo de 20 velas",
-      "abierta": "2026-09-21 01:04:05"
-    }
-  ],
+  "capital": 9325.617820781357,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -5875,13 +5861,13 @@
     {
       "fecha": "2026-09-21 06:19:46",
       "equity": 9164.69
+    },
+    {
+      "fecha": "2026-09-21 13:08:16",
+      "equity": 9325.62
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-13 04:49:33",
-      "texto": "ABIERTA LONG Nasdaq @ 29651.50 (stop 29513.37, TP 29927.76) — Cierre bajo banda inferior, RSI 28"
-    },
     {
       "fecha": "2026-07-13 08:15:19",
       "texto": "CERRADA LONG Bitcoin @ 62921.40 → PnL -96.86 USD (stop loss)"
@@ -6677,14 +6663,18 @@
     {
       "fecha": "2026-09-21 01:04:05",
       "texto": "ABIERTA LONG Bitcoin @ 81604.82 (stop 80907.67, TP 82999.12) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-09-21 13:08:16",
+      "texto": "CERRADA LONG Bitcoin @ 82999.12 → PnL +182.86 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7747.5,
-    "NQ=F": 30110.75,
-    "BTC-USD": 81771.9921875,
-    "GC=F": 4391.60009765625,
-    "CL=F": 94.52999877929688
+    "ES=F": 7761.5,
+    "NQ=F": 30226.0,
+    "BTC-USD": 85367.75,
+    "GC=F": 4398.10009765625,
+    "CL=F": 93.52999877929688
   },
-  "actualizado": "2026-09-21 06:19:46"
+  "actualizado": "2026-09-21 13:08:16"
 }
