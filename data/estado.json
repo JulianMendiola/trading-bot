@@ -1,6 +1,20 @@
 {
   "capital": 9140.038026147808,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7783.0,
+      "unidades": 6.154010012785157,
+      "stop": 7768.147833677295,
+      "take_profit": 7812.70433264541,
+      "riesgo_usd": 91.40038026147808,
+      "motivo": "Cierre bajo banda inferior, RSI 16",
+      "abierta": "2026-09-23 14:52:31"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -5909,17 +5923,13 @@
     {
       "fecha": "2026-09-23 09:59:40",
       "equity": 9140.04
+    },
+    {
+      "fecha": "2026-09-23 14:52:32",
+      "equity": 9152.35
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-14 00:08:06",
-      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.91)"
-    },
-    {
-      "fecha": "2026-07-14 03:32:29",
-      "texto": "CERRADA SHORT Bitcoin @ 62545.44 → PnL -96.84 USD (stop loss)"
-    },
     {
       "fecha": "2026-07-14 14:47:39",
       "texto": "CERRADA LONG S&P 500 @ 7574.24 → PnL +193.69 USD (take profit)"
@@ -6711,14 +6721,22 @@
     {
       "fecha": "2026-09-23 09:59:39",
       "texto": "CERRADA LONG Bitcoin @ 86163.29 → PnL -92.32 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-09-23 14:52:31",
+      "texto": "ABIERTA LONG S&P 500 @ 7783.00 (stop 7768.15, TP 7812.70) — Cierre bajo banda inferior, RSI 16"
+    },
+    {
+      "fecha": "2026-09-23 14:52:31",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.92)"
     }
   ],
   "precios": {
-    "ES=F": 7833.0,
-    "NQ=F": 31004.5,
-    "BTC-USD": 85861.609375,
-    "GC=F": 4345.7001953125,
-    "CL=F": 90.23999786376953
+    "ES=F": 7785.0,
+    "NQ=F": 30700.25,
+    "BTC-USD": 84339.859375,
+    "GC=F": 4323.0,
+    "CL=F": 91.97000122070312
   },
-  "actualizado": "2026-09-23 09:59:40"
+  "actualizado": "2026-09-23 14:52:32"
 }
