@@ -1,6 +1,20 @@
 {
   "capital": 9320.06058071234,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "short",
+      "entrada": 85251.546875,
+      "unidades": 0.10359874748159502,
+      "stop": 86151.17749865865,
+      "take_profit": 83452.28562768268,
+      "riesgo_usd": 93.2006058071234,
+      "motivo": "Ruptura del mínimo de 20 velas",
+      "abierta": "2026-10-05 16:17:08"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -6165,13 +6179,13 @@
     {
       "fecha": "2026-10-05 07:24:55",
       "equity": 9320.06
+    },
+    {
+      "fecha": "2026-10-05 16:17:08",
+      "equity": 9333.25
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-17 01:02:28",
-      "texto": "ABIERTA LONG S&P 500 @ 7548.50 (stop 7532.24, TP 7581.02) — Cierre bajo banda inferior, RSI 30"
-    },
     {
       "fecha": "2026-07-17 04:24:12",
       "texto": "CERRADA LONG S&P 500 @ 7532.24 → PnL -94.90 USD (stop loss)"
@@ -6967,14 +6981,18 @@
     {
       "fecha": "2026-10-04 22:32:24",
       "texto": "CERRADA LONG Bitcoin @ 85895.93 → PnL +182.75 USD (take profit)"
+    },
+    {
+      "fecha": "2026-10-05 16:17:08",
+      "texto": "ABIERTA SHORT Bitcoin @ 85251.55 (stop 86151.18, TP 83452.29) — Ruptura del mínimo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7770.0,
-    "NQ=F": 31053.25,
-    "BTC-USD": 86205.5390625,
-    "GC=F": 4184.0,
-    "CL=F": 89.94000244140625
+    "ES=F": 7811.5,
+    "NQ=F": 31225.75,
+    "BTC-USD": 85124.2734375,
+    "GC=F": 4159.7998046875,
+    "CL=F": 90.2300033569336
   },
-  "actualizado": "2026-10-05 07:24:55"
+  "actualizado": "2026-10-05 16:17:08"
 }
