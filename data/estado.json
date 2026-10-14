@@ -13,6 +13,32 @@
       "riesgo_usd": 95.05511146147352,
       "motivo": "EMA20 cruzó sobre EMA50",
       "abierta": "2026-10-12 17:42:33"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7828.25,
+      "unidades": 5.412770430144872,
+      "stop": 7810.864344805246,
+      "take_profit": 7863.021310389508,
+      "riesgo_usd": 94.10456034685878,
+      "motivo": "Cierre bajo banda inferior, RSI 25",
+      "abierta": "2026-10-14 13:05:10"
+    },
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "short",
+      "entrada": 82643.9609375,
+      "unidades": 0.10455512073158708,
+      "stop": 83547.11446945455,
+      "take_profit": 80837.6538735909,
+      "riesgo_usd": 94.42932657266748,
+      "motivo": "Ruptura del mínimo de 20 velas",
+      "abierta": "2026-10-14 13:05:10"
     }
   ],
   "historial_equity": [
@@ -6335,21 +6361,13 @@
     {
       "fecha": "2026-10-14 07:37:12",
       "equity": 9429.85
+    },
+    {
+      "fecha": "2026-10-14 13:05:10",
+      "equity": 9499.94
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-21 14:11:54",
-      "texto": "ABIERTA LONG Bitcoin @ 66742.92 (stop 66074.89, TP 68078.98) — Ruptura del máximo de 20 velas"
-    },
-    {
-      "fecha": "2026-07-21 15:52:59",
-      "texto": "CERRADA SHORT Nasdaq @ 29185.16 → PnL -93.93 USD (stop loss)"
-    },
-    {
-      "fecha": "2026-07-22 04:33:17",
-      "texto": "ABIERTA SHORT S&P 500 @ 7537.50 (stop 7554.18, TP 7504.14) — Cierre sobre banda superior, RSI 78"
-    },
     {
       "fecha": "2026-07-22 04:33:17",
       "texto": "SEÑAL OMITIDA SHORT Nasdaq: correlación alta con ES=F (corr 0.91)"
@@ -7137,14 +7155,26 @@
     {
       "fecha": "2026-10-13 05:27:11",
       "texto": "CERRADA SHORT Bitcoin @ 82886.17 → PnL -95.06 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-10-14 13:05:10",
+      "texto": "ABIERTA LONG S&P 500 @ 7828.25 (stop 7810.86, TP 7863.02) — Cierre bajo banda inferior, RSI 25"
+    },
+    {
+      "fecha": "2026-10-14 13:05:10",
+      "texto": "SEÑAL OMITIDA LONG Nasdaq: correlación alta con ES=F (corr 0.88)"
+    },
+    {
+      "fecha": "2026-10-14 13:05:10",
+      "texto": "ABIERTA SHORT Bitcoin @ 82643.96 (stop 83547.11, TP 80837.65) — Ruptura del mínimo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7865.5,
-    "NQ=F": 30796.5,
-    "BTC-USD": 83320.1015625,
-    "GC=F": 4168.10009765625,
-    "CL=F": 94.4000015258789
+    "ES=F": 7834.25,
+    "NQ=F": 30614.0,
+    "BTC-USD": 82671.296875,
+    "GC=F": 4127.7001953125,
+    "CL=F": 95.61000061035156
   },
-  "actualizado": "2026-10-14 07:37:12"
+  "actualizado": "2026-10-14 13:05:10"
 }
