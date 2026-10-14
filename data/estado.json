@@ -1,5 +1,5 @@
 {
-  "capital": 9410.456034685878,
+  "capital": 9316.35147433902,
   "posiciones": [
     {
       "simbolo": "CL=F",
@@ -13,19 +13,6 @@
       "riesgo_usd": 95.05511146147352,
       "motivo": "EMA20 cruzó sobre EMA50",
       "abierta": "2026-10-12 17:42:33"
-    },
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 7828.25,
-      "unidades": 5.412770430144872,
-      "stop": 7810.864344805246,
-      "take_profit": 7863.021310389508,
-      "riesgo_usd": 94.10456034685878,
-      "motivo": "Cierre bajo banda inferior, RSI 25",
-      "abierta": "2026-10-14 13:05:10"
     },
     {
       "simbolo": "BTC-USD",
@@ -6365,13 +6352,13 @@
     {
       "fecha": "2026-10-14 13:05:10",
       "equity": 9499.94
+    },
+    {
+      "fecha": "2026-10-14 18:00:14",
+      "equity": 9507.97
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-22 04:33:17",
-      "texto": "SEÑAL OMITIDA SHORT Nasdaq: correlación alta con ES=F (corr 0.91)"
-    },
     {
       "fecha": "2026-07-22 07:20:54",
       "texto": "CERRADA LONG Bitcoin @ 66074.89 → PnL -95.10 USD (stop loss)"
@@ -7167,14 +7154,18 @@
     {
       "fecha": "2026-10-14 13:05:10",
       "texto": "ABIERTA SHORT Bitcoin @ 82643.96 (stop 83547.11, TP 80837.65) — Ruptura del mínimo de 20 velas"
+    },
+    {
+      "fecha": "2026-10-14 18:00:14",
+      "texto": "CERRADA LONG S&P 500 @ 7810.86 → PnL -94.10 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7834.25,
-    "NQ=F": 30614.0,
-    "BTC-USD": 82671.296875,
-    "GC=F": 4127.7001953125,
-    "CL=F": 95.61000061035156
+    "ES=F": 7753.0,
+    "NQ=F": 30166.5,
+    "BTC-USD": 81505.34375,
+    "GC=F": 4104.7001953125,
+    "CL=F": 95.98999786376953
   },
-  "actualizado": "2026-10-14 13:05:10"
+  "actualizado": "2026-10-14 18:00:14"
 }
