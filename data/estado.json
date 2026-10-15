@@ -1,5 +1,5 @@
 {
-  "capital": 9505.210127484355,
+  "capital": 9596.06259789208,
   "posiciones": [
     {
       "simbolo": "CL=F",
@@ -13,32 +13,6 @@
       "riesgo_usd": 95.05511146147352,
       "motivo": "EMA20 cruzó sobre EMA50",
       "abierta": "2026-10-12 17:42:33"
-    },
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "long",
-      "entrada": 7730.25,
-      "unidades": 3.3796624336891146,
-      "stop": 7702.684076902261,
-      "take_profit": 7785.381846195477,
-      "riesgo_usd": 93.16351474339021,
-      "motivo": "Cierre bajo banda inferior, RSI 11",
-      "abierta": "2026-10-15 04:36:56"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "short",
-      "entrada": 80104.0390625,
-      "unidades": 0.08324992220865707,
-      "stop": 81250.88168464393,
-      "take_profit": 77810.35381821214,
-      "riesgo_usd": 95.47455907905469,
-      "motivo": "Ruptura del mínimo de 20 velas",
-      "abierta": "2026-10-15 14:17:57"
     }
   ],
   "historial_equity": [
@@ -6389,17 +6363,13 @@
     {
       "fecha": "2026-10-15 14:17:57",
       "equity": 9503.06
+    },
+    {
+      "fecha": "2026-10-15 18:29:12",
+      "equity": 9688.36
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-22 17:01:02",
-      "texto": "CERRADA SHORT Oro @ 4168.29 → PnL -97.84 USD (stop loss)"
-    },
-    {
-      "fecha": "2026-07-23 13:51:19",
-      "texto": "ABIERTA LONG S&P 500 @ 7453.50 (stop 7432.68, TP 7495.14) — Cierre bajo banda inferior, RSI 22"
-    },
     {
       "fecha": "2026-07-23 13:51:20",
       "texto": "ABIERTA SHORT Bitcoin @ 65132.14 (stop 65710.09, TP 63976.25) — Ruptura del mínimo de 20 velas"
@@ -7191,14 +7161,22 @@
     {
       "fecha": "2026-10-15 14:17:57",
       "texto": "ABIERTA SHORT Bitcoin @ 80104.04 (stop 81250.88, TP 77810.35) — Ruptura del mínimo de 20 velas"
+    },
+    {
+      "fecha": "2026-10-15 18:29:11",
+      "texto": "CERRADA LONG S&P 500 @ 7785.38 → PnL +186.33 USD (take profit)"
+    },
+    {
+      "fecha": "2026-10-15 18:29:11",
+      "texto": "CERRADA SHORT Bitcoin @ 81250.88 → PnL -95.47 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7742.75,
-    "NQ=F": 29804.0,
-    "BTC-USD": 81063.15625,
-    "GC=F": 4172.2001953125,
-    "CL=F": 94.87999725341797
+    "ES=F": 7771.75,
+    "NQ=F": 29969.25,
+    "BTC-USD": 82119.7578125,
+    "GC=F": 4177.89990234375,
+    "CL=F": 96.58000183105469
   },
-  "actualizado": "2026-10-15 14:17:57"
+  "actualizado": "2026-10-15 18:29:12"
 }
