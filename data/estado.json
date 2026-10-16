@@ -13,6 +13,19 @@
       "riesgo_usd": 95.05511146147352,
       "motivo": "EMA20 cruzó sobre EMA50",
       "abierta": "2026-10-12 17:42:33"
+    },
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "long",
+      "entrada": 7709.25,
+      "unidades": 3.810718440867253,
+      "stop": 7684.068232449343,
+      "take_profit": 7759.613535101314,
+      "riesgo_usd": 95.9606259789208,
+      "motivo": "Cierre bajo banda inferior, RSI 15",
+      "abierta": "2026-10-16 17:28:41"
     }
   ],
   "historial_equity": [
@@ -6387,13 +6400,13 @@
     {
       "fecha": "2026-10-16 13:14:43",
       "equity": 9663.28
+    },
+    {
+      "fecha": "2026-10-16 17:28:41",
+      "equity": 9720.85
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-23 13:51:20",
-      "texto": "ABIERTA SHORT Bitcoin @ 65132.14 (stop 65710.09, TP 63976.25) — Ruptura del mínimo de 20 velas"
-    },
     {
       "fecha": "2026-07-23 15:53:26",
       "texto": "CERRADA LONG S&P 500 @ 7432.68 → PnL -91.05 USD (stop loss)"
@@ -7189,14 +7202,18 @@
     {
       "fecha": "2026-10-15 18:29:11",
       "texto": "CERRADA SHORT Bitcoin @ 81250.88 → PnL -95.47 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-10-16 17:28:41",
+      "texto": "ABIERTA LONG S&P 500 @ 7709.25 (stop 7684.07, TP 7759.61) — Cierre bajo banda inferior, RSI 15"
     }
   ],
   "precios": {
-    "ES=F": 7803.75,
-    "NQ=F": 30055.5,
-    "BTC-USD": 81935.359375,
-    "GC=F": 4188.7001953125,
-    "CL=F": 95.83000183105469
+    "ES=F": 7700.75,
+    "NQ=F": 29459.0,
+    "BTC-USD": 80819.0390625,
+    "GC=F": 4180.2998046875,
+    "CL=F": 98.5199966430664
   },
-  "actualizado": "2026-10-16 13:14:43"
+  "actualizado": "2026-10-16 17:28:41"
 }
