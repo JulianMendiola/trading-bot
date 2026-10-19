@@ -129,3 +129,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-10-15 04:36:56,2026-10-15 18:29:11,ES=F,S&P 500,mean_reversion,long,7730.2500,7785.3818,3.379662,186.33,take profit
 2026-10-15 14:17:57,2026-10-15 18:29:11,BTC-USD,Bitcoin,momentum_breakout,short,80104.0391,81250.8817,0.083250,-95.47,stop loss
 2026-10-18 10:22:40,2026-10-18 14:05:36,BTC-USD,Bitcoin,momentum_breakout,long,82035.6406,81512.9185,0.183214,-95.77,stop loss
+2026-10-16 17:28:41,2026-10-19 03:13:19,ES=F,S&P 500,mean_reversion,long,7709.2500,7759.6135,3.810718,191.92,take profit
