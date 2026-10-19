@@ -1,20 +1,6 @@
 {
-  "capital": 9595.291622195113,
-  "posiciones": [
-    {
-      "simbolo": "CL=F",
-      "nombre": "Petróleo",
-      "estrategia": "trend_following",
-      "direccion": "long",
-      "entrada": 93.81999969482422,
-      "unidades": 33.44286165745743,
-      "stop": 90.97768576741313,
-      "take_profit": 99.5046275496464,
-      "riesgo_usd": 95.05511146147352,
-      "motivo": "EMA20 cruzó sobre EMA50",
-      "abierta": "2026-10-12 17:42:33"
-    }
-  ],
+  "capital": 9785.40184511806,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -6475,13 +6461,13 @@
     {
       "fecha": "2026-10-19 16:16:16",
       "equity": 9754.81
+    },
+    {
+      "fecha": "2026-10-19 21:11:05",
+      "equity": 9785.4
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-26 23:01:54",
-      "texto": "CERRADA LONG Bitcoin @ 64990.64 → PnL +183.43 USD (take profit)"
-    },
     {
       "fecha": "2026-07-27 23:19:24",
       "texto": "ABIERTA SHORT Bitcoin @ 63746.24 (stop 64446.70, TP 62345.31) — Ruptura del mínimo de 20 velas"
@@ -7277,14 +7263,18 @@
     {
       "fecha": "2026-10-19 16:16:16",
       "texto": "CERRADA LONG Bitcoin @ 81927.52 → PnL -96.92 USD (stop loss)"
+    },
+    {
+      "fecha": "2026-10-19 21:11:05",
+      "texto": "CERRADA LONG Petróleo @ 99.50 → PnL +190.11 USD (take profit)"
     }
   ],
   "precios": {
-    "ES=F": 7750.0,
-    "NQ=F": 29872.75,
-    "BTC-USD": 81923.0625,
-    "GC=F": 4162.39990234375,
-    "CL=F": 98.58999633789062
+    "ES=F": 7739.75,
+    "NQ=F": 29743.75,
+    "BTC-USD": 81938.546875,
+    "GC=F": 4160.2998046875,
+    "CL=F": 98.23999786376953
   },
-  "actualizado": "2026-10-19 16:16:16"
+  "actualizado": "2026-10-19 21:11:05"
 }
