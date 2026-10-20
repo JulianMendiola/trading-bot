@@ -1,6 +1,33 @@
 {
   "capital": 9785.40184511806,
-  "posiciones": [],
+  "posiciones": [
+    {
+      "simbolo": "ES=F",
+      "nombre": "S&P 500",
+      "estrategia": "mean_reversion",
+      "direccion": "short",
+      "entrada": 7783.75,
+      "unidades": 3.690928365194671,
+      "stop": 7810.262034038357,
+      "take_profit": 7730.725931923284,
+      "riesgo_usd": 97.85401845118061,
+      "motivo": "Cierre sobre banda superior, RSI 72",
+      "abierta": "2026-10-20 15:04:36"
+    },
+    {
+      "simbolo": "BTC-USD",
+      "nombre": "Bitcoin",
+      "estrategia": "momentum_breakout",
+      "direccion": "long",
+      "entrada": 83184.421875,
+      "unidades": 0.10944276216776201,
+      "stop": 82290.90068394224,
+      "take_profit": 84971.46425711551,
+      "riesgo_usd": 97.7894272047897,
+      "motivo": "Ruptura del máximo de 20 velas",
+      "abierta": "2026-10-20 15:04:37"
+    }
+  ],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -6477,17 +6504,13 @@
     {
       "fecha": "2026-10-20 10:03:13",
       "equity": 9785.4
+    },
+    {
+      "fecha": "2026-10-20 15:04:37",
+      "equity": 9754.04
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-27 23:19:24",
-      "texto": "ABIERTA SHORT Bitcoin @ 63746.24 (stop 64446.70, TP 62345.31) — Ruptura del mínimo de 20 velas"
-    },
-    {
-      "fecha": "2026-07-28 00:53:59",
-      "texto": "CERRADA SHORT Bitcoin @ 64446.70 → PnL -95.62 USD (stop loss)"
-    },
     {
       "fecha": "2026-07-28 13:19:30",
       "texto": "ABIERTA SHORT Oro @ 4027.80 (stop 4084.28, TP 3914.83) — EMA20 cruzó bajo EMA50"
@@ -7279,14 +7302,22 @@
     {
       "fecha": "2026-10-19 21:11:05",
       "texto": "CERRADA LONG Petróleo @ 99.50 → PnL +190.11 USD (take profit)"
+    },
+    {
+      "fecha": "2026-10-20 15:04:36",
+      "texto": "ABIERTA SHORT S&P 500 @ 7783.75 (stop 7810.26, TP 7730.73) — Cierre sobre banda superior, RSI 72"
+    },
+    {
+      "fecha": "2026-10-20 15:04:37",
+      "texto": "ABIERTA LONG Bitcoin @ 83184.42 (stop 82290.90, TP 84971.46) — Ruptura del máximo de 20 velas"
     }
   ],
   "precios": {
-    "ES=F": 7727.5,
-    "NQ=F": 29590.25,
-    "BTC-USD": 81409.0390625,
-    "GC=F": 4131.2001953125,
-    "CL=F": 100.77999877929688
+    "ES=F": 7785.5,
+    "NQ=F": 29856.75,
+    "BTC-USD": 82956.90625,
+    "GC=F": 4158.39990234375,
+    "CL=F": 95.8499984741211
   },
-  "actualizado": "2026-10-20 10:03:13"
+  "actualizado": "2026-10-20 15:04:37"
 }
