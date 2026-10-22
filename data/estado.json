@@ -1,33 +1,6 @@
 {
-  "capital": 9785.40184511806,
-  "posiciones": [
-    {
-      "simbolo": "ES=F",
-      "nombre": "S&P 500",
-      "estrategia": "mean_reversion",
-      "direccion": "short",
-      "entrada": 7783.75,
-      "unidades": 3.690928365194671,
-      "stop": 7810.262034038357,
-      "take_profit": 7730.725931923284,
-      "riesgo_usd": 97.85401845118061,
-      "motivo": "Cierre sobre banda superior, RSI 72",
-      "abierta": "2026-10-20 15:04:36"
-    },
-    {
-      "simbolo": "BTC-USD",
-      "nombre": "Bitcoin",
-      "estrategia": "momentum_breakout",
-      "direccion": "long",
-      "entrada": 83184.421875,
-      "unidades": 0.10944276216776201,
-      "stop": 82290.90068394224,
-      "take_profit": 84971.46425711551,
-      "riesgo_usd": 97.7894272047897,
-      "motivo": "Ruptura del máximo de 20 velas",
-      "abierta": "2026-10-20 15:04:37"
-    }
-  ],
+  "capital": 9883.320454815632,
+  "posiciones": [],
   "historial_equity": [
     {
       "fecha": "2026-06-10 16:54:48",
@@ -6548,17 +6521,13 @@
     {
       "fecha": "2026-10-22 06:07:24",
       "equity": 9924.35
+    },
+    {
+      "fecha": "2026-10-22 11:50:35",
+      "equity": 9883.32
     }
   ],
   "eventos": [
-    {
-      "fecha": "2026-07-28 13:19:30",
-      "texto": "ABIERTA SHORT Oro @ 4027.80 (stop 4084.28, TP 3914.83) — EMA20 cruzó bajo EMA50"
-    },
-    {
-      "fecha": "2026-07-29 01:09:53",
-      "texto": "ABIERTA SHORT Petróleo @ 81.89 (stop 86.30, TP 73.08) — EMA20 cruzó bajo EMA50"
-    },
     {
       "fecha": "2026-07-29 04:30:50",
       "texto": "ABIERTA LONG Nasdaq @ 27691.50 (stop 27515.63, TP 28043.25) — Cierre bajo banda inferior, RSI 25"
@@ -7350,14 +7319,22 @@
     {
       "fecha": "2026-10-20 15:04:37",
       "texto": "ABIERTA LONG Bitcoin @ 83184.42 (stop 82290.90, TP 84971.46) — Ruptura del máximo de 20 velas"
+    },
+    {
+      "fecha": "2026-10-22 11:50:34",
+      "texto": "CERRADA SHORT S&P 500 @ 7730.73 → PnL +195.71 USD (take profit)"
+    },
+    {
+      "fecha": "2026-10-22 11:50:34",
+      "texto": "CERRADA LONG Bitcoin @ 82290.90 → PnL -97.79 USD (stop loss)"
     }
   ],
   "precios": {
-    "ES=F": 7733.5,
-    "NQ=F": 29518.75,
-    "BTC-USD": 82759.34375,
-    "GC=F": 4097.0,
-    "CL=F": 99.23999786376953
+    "ES=F": 7724.5,
+    "NQ=F": 29510.75,
+    "BTC-USD": 81716.046875,
+    "GC=F": 4077.699951171875,
+    "CL=F": 99.20999908447266
   },
-  "actualizado": "2026-10-22 06:07:24"
+  "actualizado": "2026-10-22 11:50:35"
 }
