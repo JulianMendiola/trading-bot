@@ -145,3 +145,4 @@ abierta,cerrada,simbolo,nombre,estrategia,direccion,entrada,salida,unidades,pnl_
 2026-11-14 21:05:11,2026-11-18 23:00:14,BTC-USD,Bitcoin,momentum_breakout,short,64713.1992,62070.6989,0.077778,205.53,take profit
 2026-11-19 21:31:22,2026-11-20 18:50:23,BTC-USD,Bitcoin,momentum_breakout,short,62048.9414,59699.4615,0.089228,209.64,take profit
 2026-11-25 02:42:33,2026-11-25 20:41:13,BTC-USD,Bitcoin,momentum_breakout,short,59172.6289,60239.4355,0.100221,-106.92,stop loss
+2026-11-27 03:55:45,2026-11-27 22:16:02,BTC-USD,Bitcoin,momentum_breakout,long,61239.8984,60393.0071,0.124983,-105.85,stop loss
